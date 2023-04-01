@@ -1,0 +1,181 @@
+.main{
+	width:83%;	
+	height:50px;
+	background-color:#FFF;
+	float:left;	
+	height:auto;
+    flex-basis: 70%;
+}
+
+#top{
+	height:55px;
+	width:100%;
+	background-color:#333;
+	color:#FFF;
+	/* position: fixed; */
+}
+
+.item{
+	height:50%;
+	padding:10px; 
+	float:left;
+	color:#FFF;
+	margin-top:5px;
+}
+
+.buttona{
+    font-size:15px;
+    background:#F00;
+    border:none;
+    border-radius:6px;
+	height:30px;
+	width:3%;
+	transition:0.5s;
+	margin-top:12px;
+	background-color:#FFF
+	
+}
+
+#backround{
+	background-color:#FFFFFF;
+	height:auto; 
+	width:100%;
+}
+
+.login {
+    float:left; 
+}
+#menu ul {
+    color:#000;
+    list-style-type: none;
+    text-align:left;
+    max-width: 100%;
+}
+  
+#menu li {
+    text-align:center;
+    display: inline-block;
+    width:12%;
+    margin-left:-10px;
+    padding: 0px 5px 0px 5px;
+}
+  
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: #333;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    border-radius: 10%;
+}
+  
+#menu a:hover {
+    background:#F00;
+    color:#333;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    margin-top:-16px;
+}
+#content {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    /* Thuộc tính tạo màu nền
+    background-image: linear-gradient(0, #333, #F00); */
+ }
+.sp {
+    width: 350px;
+    height: 400px;
+    float: left;
+    border: 3px solid;
+    margin: 10px 10px 10px 10px;
+
+}
+/* Để căn giữa một hình ảnh, hãy đặt margin-left và margin-right thành auto và biến nó thành một phần tử khối (block) */
+.sp img {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    display: block;
+    margin: auto; 
+}
+.sp:hover {
+    /* background-color: lightgray; */
+    border-color: #F00;
+}
+.sp ul {
+    color:#000;
+    list-style-type: none;
+    text-align:left;
+    max-width: 100%;
+}
+  
+.sp li {
+    text-align:center;
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    padding: 0px 5px 0px 5px;
+    margin: 10px;
+}
+  
+.sp a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background-color: #333;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    border-radius: 15%; 
+}
+
+/* a:link {color:blue;}: Hiển thị hiệu ứng khác biệt để người đọc biết đây là đường liên kết.
+a:visited {color:green;}: Đường link đã từng được click vào.
+a:hover {color:red;}: Di chuột qua đường link.
+a:active {color:navy;}: Đường link đang được nhấp chuột vào. 
+-- Lưu ý:
+a:hover phải xuất hiện sau a:link và a:visited trong CSS để tạo ra hiệu ứng.
+Tương tự, a:active phải xuất hiện sau a:hover.
+Các tên được sử dụng cho Pseudo Class là không phân biệt chữ hoa chữ thường.
+Pseudo Class khác với các Class khác trong CSS, tuy nhiên chúng có thể kết hợp với nhau.*/
+.sp a:hover {
+    background: lightcoral;
+    color:#333;
+    height:50px;
+    line-height:50px;
+    width:100%;
+    margin-top:-16px;
+}
+
+#footer{
+	width:100%;
+	color:#FFF;
+	float:left;
+    margin: 10px 5px 10px 5px;
+	background-color:#333;
+    text-align: center;
+}
+/*  */
+
+/* #box {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    padding: 16px; 
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: fixed;
+    margin-left: 1390px;
+    margin-top: 15px;
+} */
+
+/* margin: auto; - căn giữa phần tử
+ Căn giữa không có hiệu lực nếu thuộc tính width không được đặt (hoặc được đặt thành 100%) */
+
+/* Căn giữa văn bản: text-align: center; */
