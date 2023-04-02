@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+.item { /* css cho tat ca item*/
+    background-color: gray;
+    border: 1px solid red;
+    min-height: 50px;
+} /* => tao ra 1 grid */
+
+.container {
+    display: grid; /* gán thuộc tính grid cho class*/
+    height: 100vh;
+    /* Kích thước tuyệt đối */
+    /*grid-template-columns: 300px 100px 200px; chia grid thành 3 cột: cột đầu tiên 300px và cột thứ 2 100px và cột thứ 3 200px*/
+    /*grid-template-rows: 100px 200px 300px; chia grid thành 3 hàng*/
+    
+    /* Kích thước tương đối */
+    grid-template-columns: 1fr 2fr 1fr; /*fraction: phân đoạn*/
+    
+    /* Có thể kết hợp tương đối x tuyệt đối */
+    grid-template-rows: 100px 1fr 1fr 100px;
+
+    /* E.x: viết nhiều giá trị cùng 1 lúc:
+    grid-template-columns: repeat(3, 1fr); => 3 là số cột - 1fr là kích thước
+    rid-template-rows: 1fr 2fr 100px; */
+
+    /* Xét cho những hàng được tạo tự động */
+    /* grid-auto-rows: 200px; */
+    /* grid-auto-rows: minmax(60px, auto); */
+
+    /* Phân bổ grid area */
+    grid-template-areas: 
+    "header header header" 
+    "sidebar content content"
+    "sidebar comment comment"
+    "footer footer footer";
+
+    column-gap: 5px; /*khoảng trắng giữa các cột*/
+    row-gap: 5px; /*khoảng trắng giữa các hàng*/
+}
+.item-1 {
+    grid-area: header;
+}
+.item-2 {
+    grid-area: sidebar;
+}
+.item-3 {
+    grid-area: content;
+}
+.item-4 {
+    /* grid-row: 2 / 5; */
+    grid-area: comment;
+}
+
+/* Gộp 2 grid cell */
+.item-5 {
+    /* Gộp 2 ô trong hàng - con số bắt đầu tính từ dòng kẻ đầu tiên
+    grid-column-start: 2;
+    grid-column-end: 4; */
+
+    /* Gộp 2 ô trong cột - con số bắt đầu tính từ dòng kẻ đầu tiên
+    grid-row-start: 2;
+    grid-row-end: 4; */
+
+    /* Viết ngắn gọn:
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;  */
+    grid-area: footer;
+}
+
