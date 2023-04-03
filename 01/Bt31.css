@@ -65,7 +65,7 @@ div.main_right {
     font-size: 20px;
     margin-top: 3px;
 }
-.row>div>div:hover {
+.row > div > div:hover {
     background-color: red;
 }
 .right1 {

@@ -1,0 +1,34 @@
+.menu {
+    display: grid;
+    height: 50px;
+    width: 100%;
+    grid-template-columns: repeat(5,7%) auto 7%;
+    /* grid-template-columns: 7% 7% 7% 7% 7% auto 7%; */
+    grid-gap: 2px;
+    align-items: center;
+    background-color: #333;
+}
+.item { /* css cho tat ca item*/
+    color: white;
+    height: 50px;
+    /* align-items: center; */
+    line-height: 50px;
+    justify-content: space-around;
+    text-align: center;
+} 
+.item:hover {
+    background-color: red;
+    border-radius: 10%;
+}
+.content {
+    height: 600px;
+}
+.footer {
+    background-color: gray;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 3px;
+}

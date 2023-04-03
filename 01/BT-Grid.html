@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            display: grid; 
+            /* quy định 1 thẻ, giúp thẻ này có các thẻ con được sắp xếp theo dạng lưới
+            Có thể quy định chiều ngang, chiều dọc, khoảng cách của các phần tử */
+            
+            /* grid-template-columns: 1000px auto auto; */
+            /* grid-template-columns: xác định số cột và độ rộng từng cột */
+            
+            /* grid-template-rows: 100px 200px 50px; */
+            /* grid-template-row: xác định số hàng và độ cao từng hàng */
+            
+            /* grid-gap: 5px;  */
+            /* Khoảng cách giữa all đối tượng trong grid */
+            
+        /* }  */
+        .item {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+        }
+        .container {
+            display: grid;
+            height: 500px;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around; 
+            /* đưa all đối tượng vào giữa 
+            Thêm: center, space-between, space-around, start, end*/
+            background-color: yellow;
+            align-items: center; /*căn giữa theo chiều dọc*/
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div> -->
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
