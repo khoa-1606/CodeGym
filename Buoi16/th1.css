@@ -42,14 +42,16 @@
     grid-gap: 2px;
     align-items: center;
     background-color: #333;
+    
 }
 .itemmenu { /* css cho tat ca item*/
     color: white;
-    height: 50px;
+    height: 35px;
     /* align-items: center; */
-    line-height: 50px;
+    line-height: 35px;
     justify-content: space-around;
     text-align: center;
+    border-right: 2px solid red;
 } 
 .itemmenu:hover {
     background-color: red;
@@ -93,7 +95,7 @@
     border: 1px;
     float: left;
     margin-right: 5px;
-    background-color: lightpink;
+    background-color: lightcyan;
 }
 
 .content-left1 {
@@ -124,7 +126,7 @@
     height: 600px;
     border: 1px solid;
     margin-right: 5px;
-    background-color: lightsalmon;
+    background-color: lightpink;
 }
 .box{
     display: grid;
@@ -152,17 +154,34 @@
     height: 600px;
     float: left;
     border: 1px solid;
-    background-color: lightgreen;
+    background-color: lightblue;
 }
 
 .footer {
-    width: 100%;
+    display: grid;
     height: 50px;
-    border: 1px;
-    margin-top: 5px;
-    background-color: lightblue;
+    width: 100%;
+    grid-template-columns: 7% auto repeat(5,7%);
+    /* grid-template-columns: 7% 7% 7% 7% 7% auto 7%; */
+    grid-gap: 2px;
+    align-items: center;
+    background-color: #333;
+    
 }
-.menu-footer td {
+.itemfooter { /* css cho tat ca item*/
+    color: white;
+    height: 35px;
+    /* align-items: center; */
+    line-height: 35px;
+    justify-content: space-around;
+    text-align: center;
+    border-left: 2px solid red;
+} 
+.itemfooter:hover {
+    background-color: red;
+    border-radius: 10%;
+}
+/* .menu-footer td {
     line-height:30px;
     border-left: 1px solid;
     padding: 2px 30px 2px 5px;
@@ -179,7 +198,7 @@
     border-left: 1px;
     padding: 2px 30px 2px 5px;
     border-top: 10px;
-}
+} */
 /* Dưới 1200: Mất phần main_left*/
 @media only screen and (max-width: 1200px) {
     .content-left {
