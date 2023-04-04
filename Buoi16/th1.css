@@ -6,56 +6,55 @@
 } */
 .head {
     width: 100%;
-    height: 150px;
+    height: 300px;
     border: 1px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: lightblue;
+    background-color: white;
 }
 
 .head_logo {
-    width: 30%;
-    height: 150px;
+    width: 20%;
+    height: 300px;
     margin-right: 5px;
     border: 1px solid;
     float: left;
-    /* box-sizing: border-box; */
+    /* Căn chỉnh logo nằm giữa ô head_logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head_banner {
-    width: calc(100% - 30% - 9px);
-    height: 150px;
+    width: calc(100% - 20% - 9px);
+    height: 300px;
     border: 1px solid;
     float: left;
     box-sizing: border-box;
 }
 
 .menu {
-    width: 100%;
+    display: grid;
     height: 50px;
-    border: 1px solid;
-    margin-top: 5px;
+    width: 100%;
+    grid-template-columns: repeat(5,7%) auto 7%;
+    /* grid-template-columns: 7% 7% 7% 7% 7% auto 7%; */
+    grid-gap: 2px;
+    align-items: center;
     background-color: #333;
 }
-
-.menu-bar td {
-    line-height:30px;
-    border-left: 1px solid;
-    padding: 2px 30px 2px 5px;
-    border-top: 10px;
+.itemmenu { /* css cho tat ca item*/
+    color: white;
+    height: 50px;
+    /* align-items: center; */
+    line-height: 50px;
+    justify-content: space-around;
+    text-align: center;
+} 
+.itemmenu:hover {
+    background-color: red;
+    border-radius: 10%;
 }
-
-.menu a {
-    color: black;
-    text-decoration: none;
-}
-.menu .menu-bar .home {
-    line-height: 30px;
-    border-left: 1px;
-    padding: 2px 30px 2px 5px;
-    border-top: 10px;
-}
-
 .buttona{
     font-size:15px;
     background:#F00;
@@ -74,7 +73,11 @@
 	color:#FFF;
 	margin-top:2px;
 }
-
+.itemsearch {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
 .content {
     width: 100%;
     height: 600px;
@@ -123,13 +126,26 @@
     margin-right: 5px;
     background-color: lightsalmon;
 }
-.item {
-    width: 300px;
+.box{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+.news {
+    border: 1px solid;
     height: 150px;
-    float: left;
-    color: black;
-    border: 1px solid black;
-    margin: 5px;
+    text-align: center;
+    line-height: 150px;
+}
+.items {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px;
+    grid-gap: 10px;
+}
+.item {
+    border: 1px solid;
 }
 .content-right {
     width: 25%;
