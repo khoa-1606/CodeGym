@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 1</title>
+    <link rel="stylesheet" href="Study1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- Tạo logo trên tên của tab trang web -->
+    <link rel="shortcut icon" href="keychron/logo3.png" type="image/x-icon">
+</head>
+<body>
+    <!-- banner -->
+    <section id=banner>
+        <img src="keychron/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Keychron</h1>
+            <p></p>
+            <div class="banner-btn">
+                <a href="#"> <span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+
+    <!-- sideNav -->
+    <section id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Keychron K3</a></li>
+                <li><a href="#">Setup</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div id="menuBtn">
+        <img src="keychron/menu.png" id="menu">
+    </div>
+    <!-- end sibeNav -->
+
+    <!-- script -->
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sibeNav = document.getElementById("sibeNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "keychron/close.jpg";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "keychron/menu.png";
+            }
+        }
+    </script>
+    <!-- end script -->
+
+</body>
+</html>

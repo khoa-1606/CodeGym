@@ -28,7 +28,7 @@
 .head_banner {
     width: calc(100% - 20% - 9px);
     height: 300px;
-    border: 1px solid;
+    /*border: 1px solid;*/
     float: left;
     box-sizing: border-box;
 }
@@ -223,24 +223,7 @@
     background-color: red;
     border-radius: 10%;
 }
-/* .menu-footer td {
-    line-height:30px;
-    border-left: 1px solid;
-    padding: 2px 30px 2px 5px;
-    border-top: 10px;
-}
 
-.footer a {
-    color: black;
-    text-decoration: none;
-}
-
-.footer .menu-footer .home {
-    line-height: 30px;
-    border-left: 1px;
-    padding: 2px 30px 2px 5px;
-    border-top: 10px;
-} */
 /* Dưới 1200: Mất phần main_left*/
 @media only screen and (max-width: 1200px) {
     .content-left {

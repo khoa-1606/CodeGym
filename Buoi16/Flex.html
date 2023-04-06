@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            /*flex-direction: column; xếp theo chiều dọc >column)*/
+            /*flex-direction: row; xếp theo chiều ngang (row) - mặc định là row*/
+            flex-wrap: wrap; /* tự động xuống dòng khi co khung hình lại*/
+            /*flex-wrap: wrap-reverse;  tự động xuống dòng khi co khung hình lại - thứ tự ngược lại*/
+        }   
+        .news {
+            width: calc(50% - 22px);
+            height: 200px;
+            border: 1px solid;
+            margin: 10px;
+        }
+        .item {
+            width: calc(33.33% - 22px);
+            height: 200px;
+            border: 1px solid;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="news">1</div>
+        <div class="news">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+    </div>
+</body>
+</html>
