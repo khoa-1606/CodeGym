@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study 1</title>
+    <title>Keychron | Bàn phím cơ</title>
     <link rel="stylesheet" href="Study1.css">
+    <!-- link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- link boostrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- Tạo logo trên tên của tab trang web -->
     <link rel="shortcut icon" href="keychron/logo3.png" type="image/x-icon">
+    <!-- link scroll menu github -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <!-- banner -->
     <section id=banner>
-        <img src="keychron/logo.png" class="logo">
+        <a href="#banner"><img src="keychron/logo.png" class="logo"></a>
         <div class="banner-text">
             <h1>Keychron</h1>
             <p></p>
             <div class="banner-btn">
-                <a href="#"> <span></span>Find Out</a>
-                <a href="#"><span></span>Read More</a>
+                <a href="#"> <span></span>Pre-Order Now</a>
+                <a href="#"><span></span>Shop Now</a>
             </div>
         </div>
     </section>
@@ -31,11 +36,14 @@
     <section id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Keychron K3</a></li>
-                <li><a href="#">Setup</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">GIỚI THIỆU</a></li>
+                <li><a href="#service">BÀN PHÍM WIRELESS</a></li>
+                <li><a href="#testimonial">BÀN PHÍM LOW PROFILE</a></li>
+                <li><a href="#testimonial2">BÀN PHÍM CƠ CUSTOM</a></li>
+                <!-- <li><a href="#">PHỤ KIỆN</a></li> -->
+                <li><a href="#footer">CONTACT</a></li>
+                <li style=" text-align: rights;"><a href="#"><i class="bi bi-person-vcard"></i></a> &nbsp; &nbsp; &nbsp; <a href="#"><i class="bi bi-box-arrow-right"></i></a></li>
             </ul>
         </nav>
     </section>
@@ -43,6 +51,239 @@
         <img src="keychron/menu.png" id="menu">
     </div>
     <!-- end sibeNav -->
+
+    <!-- features -->
+    <section id="feature">
+        <div class="title-text">
+            <p>Keychron</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+
+                <h1>BÀN PHÍM CƠ KHÔNG DÂY</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-bluetooth"></i> <!-- link icon trên boostrap -->
+                    </div>
+                    <div class="feature-text">
+                        <p>Kết nối bàn phím với tối đa 3 thiết bị qua Bluetooth. 
+                            Đồng thời, bàn phím Keychron cũng hỗ trợ kết nối USB Type-C giúp tăng tính ổn định. 
+                            Chuyển đổi mượt mà giữa các thiết bị khác nhau từ laptop, smartphone đến tablet.
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <h1>BÀN PHÍM CƠ LOW PROFILE</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrows-collapse"></i> <!-- link icon trên boostrap -->
+                    </div>
+                    <div class="feature-text">
+                        <p>Low Profile là dòng bàn phím cơ mỏng nhẹ, tiện lợi. 
+                            Đây sẽ là sự lựa chọn dành cho những người thường xuyên di chuyển, yêu cầu tính linh hoạt cũng như cơ động. 
+                            Một trợ thủ đắc lực luôn đồng hành cùng bạn tới mọi nơi.</p>
+                    </div>
+                </div>
+
+                <h1>BÀN PHÍM CƠ CUSTOM</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="bi bi-gear-wide-connected"></i> <!-- link icon trên boostrap -->
+                    </div>
+                    <div class="feature-text">
+                        <p>Bàn phím Keychron có khả năng tương thích 100% với nhiều hệ điều hành. 
+                            Hỗ trợ hoàn hảo cho macOS, Windows, iOS, cũng như Android.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-img">
+                <img src="keychron/keychron-k4-pro-1.jpg">
+            </div>
+        </div>
+    </section>
+    <!-- end features -->
+
+    <!-- services -->
+    <section id="service">
+        <div class="title-text">
+            <p>BÀN PHÍM WIRELESS</p>
+            <h1><i class="bi bi-keyboard"></i></h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="keychron/keychron-k8.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Keychron K8</h3>
+                    <hr>
+                    <p>Thiết kế để tối ưu với hầu hết workflow với layout TENKEYLESS (TKL). Ngoài ra, đặc biệt hỗ trợ Hot-swap cho bạn khả năng tùy chỉnh bàn phím cơ.</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <img src="keychron/keychron-k2.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Keychron K2</h3>
+                    <hr>
+                    <p>Kết nối dễ dàng với các thiết bị bằng Bluetooth hay cáp Type C. Bạn hoàn toàn có thể kết nối K2 với tối đa 3 thiết bị cùng lúc.</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <img src="keychron/keychron-k6.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Keychron K6</h3>
+                    <hr>
+                    <p>Keychron K6 sử dụng Chip bluetooth Broadcom để đảm bảo kết nối trên các thiết bị luôn ổn định và mạnh mẽ nhất. Đồng thời nhằm đảm bảo độ ổn định và tốc độ phản hồi nhanh nhất, bạn cũng có thể sử dụng kết nối thông qua cổng type C.</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <img src="keychron/keychron-k4v2.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Keychron K4v2</h3>
+                    <hr>
+                    <p>Keychron K4 tương thích với các hệ điều hành như MacOS, Windows, iOS và tất nhiên cả Android, thậm chí là cả với Linux. Mỗi bộ bàn phím sẽ đi kèm thêm các phím để phù hợp với Windows Layout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end service -->
+
+    <!-- testimonial -->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>BÀN PHÍM LOW PROFILE</p>
+            <h1><i class="bi bi-keyboard"></i></h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-k1v4.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron K1</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Red Switch chỉ mỏng bằng 48% so với các Switch thông thường nhưng vẫn đảm bảo được độ nhạy cần thiết để thao tác linh hoạt.
+                    Giúp năng suất làm việc cao hơn, cải thiện được tốc độ nhập liệu nhanh đến 2-3 lần so với khi làm việc với bàn phím thông thường.</p>
+                    <div class="more"><img src="keychron/keychron-k1v4.jpg"></div>
+                </div>
+
+            <div class="testimonial-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-k3.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron K3</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Kết nối K3 nhanh chóng và ổn định với 3 thiết bị cùng một lúc nhờ công nghệ Bluetooth mới nhất 5.1. 
+                    Hoặc có thể kết nối trực tiếp với máy tính thông qua cổng USB type-C để đem trải nghiệm mượt mà và tối ưu nhất.</p>
+                    <div class="more"><img src="keychron/keychron-k3.jpg"></div>
+                </div>
+
+            <div class="testimonial-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-k7.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron K7</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Switch Low Profile được thiết kế lại mỏng hơn 40% so với các loại Switch thông thường, trong khi vẫn mang lại trải nghiệm gõ hoàn hảo và nhất quán.
+                    Kết hợp với khung nhôm cứng cáp khiến K7 trở thành một trong những bàn phím cơ không dây mỏng nhất trên thế giới.</p>
+                    <div class="more"><img src="keychron/keychron-k7.jpg"></div>
+                </div>
+        </div>
+    </section>
+    <!-- end testimonial -->
+
+    <!-- testimonial2 -->
+    <section id="testimonial2">
+        <div class="title-text">
+            <p>BÀN PHÍM CƠ CUSTOM</p>
+            <h1><i class="bi bi-keyboard"></i></h1>
+        </div>
+        <div class="testimonial2-row">
+            <div class="testimonial2-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-q1-custom.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron Q1</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Keychron Q1 không chỉ là một chiếc bàn phím cơ đơn thuần, đây là một tác phẩm nghệ thuật trên bàn làm việc của bạn. 
+                    Trải qua hàng loạt quá trình gia công CNC chính xác để mang đến một sản phẩm chất lượng cao nhất đến người dùng.</p>
+                    <div class="more"><img src="keychron/keychron-q1-custom.jpg"></div>
+                </div>
+
+            <div class="testimonial2-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-q3-gray.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron Q3</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Keychron Q3 là bàn phím cơ có thể tùy chỉnh mọi thứ để nâng cao trải nghiệm gõ của bạn. Với layout tenkeyless cổ điển, phần khung được gia công bằng nhôm gia công CNC chắc chắn, thiết kế double-gasket và hỗ trợ QMK / VIA. 
+                    Keychron Q3 được thiết kế để mang cho bạn sự thoải mái và trải nghiệm cao cấp khi gõ phím.</p>
+                    <div class="more"><img src="keychron/keychron-q3-gray.jpg"></div>
+                </div>
+
+            <div class="testimonial2-col">
+                <div class="keyboard">
+                    <img src="keychron/keychron-v2-frosted-black.jpg">
+                    <div class="info">
+                        <h4 style="font-size: 18px;">Keychron V2</h4>
+                        <!-- <small>@keychron</small> -->
+                    </div>
+                </div>
+                <p>Keychron V2 được thiết kế là một chiếc bàn phím cơ cho phép bạn hoàn toàn có thể custom mọi thứ. 
+                    Tất cả thành phần tạo nên chiếc bàn phím cơ này đều có thể dễ dàng thay thế, cân chỉnh để bạn có thể mod bất kỳ bộ phận, tạo ra trải nghiệm gõ độc đáo theo cách bạn muốn.</p>
+                    <div class="more"><img src="keychron/keychron-v2-frosted-black.jpg"></div>
+                </div>
+        </div>
+    </section>
+    <!-- end testimonial2 -->
+
+    <!-- footer -->
+    <section id="footer">
+        <img src="keychron/keychron-k4-pro-1.jpg" class="footer-img">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>...</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="bi bi-clock"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="bi bi-clock"></i>Satusay to Sunday - 8am to 3pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>XXX - YYY City <i class="bi bi-geo-alt"></i></p>
+                <p>example@website.com <i class="bi bi-paperclip"></i></p>
+                <p>+01 123456789 <i class="bi bi-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-link">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-discord"></i>
+            <p>Copyright Easy Tutorials Youtube Chanel</p>
+        </div>
+    </section>
+    <!-- end footer -->
 
     <!-- script -->
     <script>
@@ -60,8 +301,13 @@
                 menu.src = "keychron/menu.png";
             }
         }
+
+        // All animations will take exactly 1000ms
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
     </script>
-    <!-- end script -->
 
 </body>
 </html>
