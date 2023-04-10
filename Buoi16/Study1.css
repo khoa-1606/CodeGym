@@ -281,7 +281,7 @@ hr {
 }
 .more img {
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .keyboard {
     display: flex;
@@ -301,7 +301,15 @@ hr {
 .testimonial-col:hover {
     transform: translateY(7px);
 }
-
+small {
+    color: blue;
+    font-style: ilatic;
+}
+small {
+    color: blue;
+    font-style: italic;
+    font-weight: lighter;
+}
 /* testimonial2 */
 #testimonial2 {
     width: 100%;
@@ -331,7 +339,7 @@ hr {
 }
 .more img {
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .keyboard {
     display: flex;
@@ -418,15 +426,15 @@ hr {
 }
 
 /*RWD - thu nhỏ sửa sổ các box sẽ căn chỉnh đều nhau*/
-@media only screen and (max-width: 700px){
-    #features, #services {
-        width: 49%;
-        margin: 6px 0;
+@media only screen and (max-width: 800px){
+    #features, #services, .service-box, .testimonial-col, .testimonial-col2 {
+        width: 50%;
+        margin: 5px 0;
     }
 }
 
 @media only screen and (max-width: 500px){
-    #features, #services {
+    #features, #services, .service-box, .testimonial-col, .testimonial-col2 {
         width: 100%;
     }
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD _ TH1</title>
+    <style> 
+        .hinhanh {
+            border: 3px solid #333;
+            position: relative; /*giữ cho phần tử con .ct được chứa trong phần tử cha .hinhanh*/
+        }
+
+        .hinhanh:hover {
+            border: 3px solid red;
+        }
+
+        .hinhanh img {
+            width: 100%;
+            height: auto;
+        }
+        .hinhanh:hover img{
+            transform: translateY(2px) scale(0.98);
+            opacity: 1;
+        }
+        .hinhanh > .ct{
+            position: absolute;
+            color: black;
+            font-size: 22px;
+            padding: 5px 10px ;
+            top: 15%;
+            left: 9%;
+            opacity: 0;
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: all 0.8s ;
+            background: red;
+            margin-top: 100px;
+            margin-left: 80px;
+        }
+        .hinhanh:hover > .ct{
+            opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+        }
+        .name {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box; /* căn chỉnh box đều nhau */
+        }
+
+        .sp {
+            padding: 0 6px;
+            float: left;
+            width: 24%;
+            margin: 5px;
+        }
+        /*RWD - thu nhỏ sửa sổ các box sẽ căn chỉnh đều nhau*/
+        @media only screen and (max-width: 700px){
+            .sp {
+                width: 49%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px){
+            .sp {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">RWD - TH1</h2>
+    <h4></h4>
+    
+    <div class="sp">
+      <div class="hinhanh">
+          <img src="Logitech-ProX-Gaming.jpg" width="600" height="400">
+        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+        <div class="name">Logitech ProX Gaming</div>
+      </div>
+    </div>
+    
+    
+    <div class="sp">
+      <div class="hinhanh">
+          <img src="Keychron-K7.jpg" width="600" height="400">
+        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+        <div class="name">Keychron K7</div>
+      </div>
+    </div>
+    
+    <div class="sp">
+      <div class="hinhanh">
+          <img src="Keychron-K3-ultra-switch-brown_1800x1800.jpg" width="600" height="400">
+        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+        <div class="name">Keychron K3</div>
+      </div>
+    </div>
+    
+    <div class="sp">
+      <div class="hinhanh">
+          <img src="Ziyoulang-K87.jpg" width="600" height="400">
+        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+        <div class="name">Ziyoulang K87</div>
+      </div>
+    </div>
+
+    <div class="sp">
+        <div class="hinhanh">
+            <img src="ban-phim-co-edra-ek384-usb-rgb-huano-blue-sw-3.jpg" width="600" height="400">
+          <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+          <div class="name">Edra EK384</div>
+        </div>
+    </div>
+
+    <div class="sp">
+        <div class="hinhanh">
+            <img src="ban_phim_co_keychron_k2.jpg" width="600" height="400">
+          <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+          <div class="name">Keychron K2</div>
+        </div>
+    </div>
+
+    <div class="sp">
+         <div class="hinhanh">
+            <img src="broshop-keychron-k8-hotswap-2.jpg" width="600" height="400">
+            <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+            <div class="name">Keychron K8</div>
+        </div>
+    </div>
+
+    <div class="sp">
+        <div class="hinhanh">
+           <img src="2323_ban_phim_co_keychron_k6.jpg" width="600" height="400">
+           <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+           <div class="name">Keychron K6</div>
+       </div>
+   </div>
+
+   <div class="sp">
+        <div class="hinhanh">
+            <img src="Hinhanh/vga/asus-2gb-gtx960-dc2oc-2gd5-black-1.png" width="600" height="400">
+            <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+            <div class="name">Asus 2GB GTX960 - black</div>
+        </div>
+    </div>
+
+    <div class="sp">
+        <div class="hinhanh">
+            <img src="Hinhanh/mainboard/gigabyte-h370-aorus-gaming-3-1.png" width="600" height="400">
+            <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
+            <div class="name">Gigabyte H370</div>
+        </div>
+    </div>
+      
+
+</div>
+ 
+    </body>
+</html>
