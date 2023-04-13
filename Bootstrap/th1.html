@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TH1</title>
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- link bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -14,15 +15,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
       <style>
+        .carousel-inner {
+            width: 100%;
+            height: 500px;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+        }
+        .carousel-inner h5 {
+            color: red;
+            font-size: 25px;
+        }
+        .carousel-inner p {
+            color: orange;
+        }
+
         .card-title {
           text-align: center;
         }
         .card {
-          height: 500px;
+          width: 200px;
+          height: 280px;
         }
         .card-img-top {
           width: 100%;
-          height: 250px;
+          height: 150px;
         }
         .btn /*btn-primary*/ {
           display: flex;
@@ -77,12 +95,15 @@
  -->
 
     <div class="container-fluid"> <!-- hiển thị chiều ngang max-->
-        <div class="row">
+<!-- logo - banner -->
+      <div class="row">
             <div class="col-3"><img src="keychron/logo1.png" style="width: 100%;"></div>
             <div class="col-9"><img src="keychron/keychron-k6-banner.jpg" style="width: 100%;"></div>
-        </div>
+      </div>
+<!-- end logo - banner -->
 
-        <div class="row mt-3"> <!-- mt-5 => cách margin-top (mt) là 5 (-5)-->
+<!-- nav -->
+        <div class="row mt-2"> <!-- mt-5 => cách margin-top (mt) là 5 (-5)-->
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#">Navbar</a>
@@ -121,74 +142,159 @@
                   </nav> 
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                <div class="card"> <!-- style="width: 18rem;"> -->
-                    <img src="keychron/keychron-k3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Keychron K3</h5>
-                      <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                      <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                  </div>
-            </div>
+<!-- end nav -->
 
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                <div class="card"> <!-- style="width: 18rem;"> -->
-                    <img src="keychron/keychron-q3-gray.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Keychron Q3</h5>
-                      <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                      <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                <div class="card"> <!-- style="width: 18rem;"> -->
-                    <img src="keychron/keychron-q1-custom.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Keychron Q1</h5>
-                      <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                      <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                <div class="card"> <!-- style="width: 18rem;"> -->
-                    <img src="keychron/keychron-k5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Keychron K5</h5>
-                      <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                      <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-                <div class="card"> <!-- style="width: 18rem;"> -->
-                    <img src="keychron/keychron-k1v4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Keychron K1 version 4</h5>
-                      <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                      <a href="#" class="btn btn-primary">Buy Now</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-3">
-              <div class="card"> <!-- style="width: 18rem;"> -->
-                  <img src="keychron/keychron-k4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Keychron K4</h5>
-                    <p class="card-text">Keychron is a brand that specializes in designing and manufacturing mechanical keyboards for different devices, including Mac, Windows, and iPad.</p>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
-                  </div>
-                </div>
+<!-- main -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <h3>Phân loại</h3>
           </div>
+          <div class="col-7">
+            <div class="row">
+              <!-- Carousel -->
+              <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <!-- thanh chuyển ảnh -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                  </ol>
+          
+                  <!-- hình ảnh -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="keychron/keychron-k4-pro-1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                    </div>
+          
+                    <div class="carousel-item">
+                      <img src="keychron/keychron-v2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+          
+                    <div class="carousel-item">
+                      <img src="keychron/keychron-k8-pro.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+          
+                    <div class="carousel-item">
+                      <img src="keychron/keychron-k5.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <img src="keychron/maxresdefault.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- end carousel -->
+            <!-- list -->
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                  <div class="card"> <!-- style="width: 18rem;"> -->
+                      <img src="keychron/keychron-k3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Keychron K3</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                  <div class="card"> <!-- style="width: 18rem;"> -->
+                      <img src="keychron/keychron-q3-gray.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Keychron Q3</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                  <div class="card"> <!-- style="width: 18rem;"> -->
+                      <img src="keychron/keychron-q1-custom.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Keychron Q1</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                  <div class="card"> <!-- style="width: 18rem;"> -->
+                      <img src="keychron/keychron-k5.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Keychron K5 SE</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                  <div class="card"> <!-- style="width: 18rem;"> -->
+                      <img src="keychron/41eb3bf1e40838566119.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Keychron K3 v2</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12 mt-2">
+                <div class="card"> <!-- style="width: 18rem;"> -->
+                    <img src="keychron/keychron-k8-pro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Keychron K8 Pro</h5>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- end list -->
+          </div>
+        <div class="col-3">
+          <i class="fa fa-cat"></i>
+          <i class="fa  fa-knife-kitchen fa-pulse" style="color:blue; font-size: 20px;"></i>
+          <i class="fa fa-fan  fa-pulse"></i>
         </div>
+      </div>
     </div>
+<!-- end main -->
 </body>
 </html>
 
