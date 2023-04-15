@@ -5,22 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Boostrap 1</title>
+    <!-- setup webfont with cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <!-- Bootstrap 4.6.x -->
     <!-- link bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
     <!-- CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- Bundle - Js-->
-    <!-- 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-     -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
     <!-- Download bootstrap 4.6.x ve may va giai nen -> chep file vao project-->
-    <!-- CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> 
-    <!-- Js -->
-        <script src="bootstrap/js/bootstrap.js"></script> 
+    <!-- CSS
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  -->
+    <!-- Js
+        <script src="bootstrap/js/bootstrap.js"></script>  -->
 </head>
 <body>
-    
+    <header>
+        <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Books</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div class="mr-auto"></div> <!-- khoảng cách từ Books đến Home-->
+                
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">HOME </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">COURSE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PRICE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                    PAGES
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Generic</a>
+                    <a class="dropdown-item" href="#">Element</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h6>AUTHOR: DAILY TUITION</h6>
+                    <h1>EXCITING ADVENTURE</h1>
+                    <p>Loren ipsum dolor sit amet, consectetur adipisicing elit. Soluta incidunt quis maxie voluptatibus ac natus libero quia nisi eum, officiis cum perferendis non alias nihil reiciendis consectetur maiores odit veniam!</p>
+                    <button class="btn btn-light">
+                        By now for $5.99
+                    </button>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="../image/header-img.png"> <!-- link hình ảnh từ như mục khác (image)-->
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6 col-12">
+                    <div>
+                        <img src="../image/du-lich.png" width="100%">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <div class="panel">
+                        <h1>Mr. Devid Smith</h1>
+                        <p class="pt-4">Loren ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Cupiditate dignissimos accusamus necessitatibus aliquid vero eveniet similique. 
+                            Ea facikis nesciunt reprehederit. Laudantium voluptatum excepturi quis, laborum molesatias soluta accusamus eum rem.</p>
+                        <p>Loren ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Cupiditate dignissimos accusamus necessitatibus aliquid vero eveniet similique. 
+                            Ea facikis nesciunt reprehederit. Laudantium voluptatum excepturi quis, laborum molesatias soluta accusamus eum rem.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-2 container-fluid p-0">
+            <div class="content text-center">
+                <h1>Some Features That Us Unique</h1>
+                <p>Loren ipsum dolor sit, amet consectetur adipisicing elit. Vitae, eum?</p>
+            </div>
+
+            <div class="container-fluid text-center">
+                <div class="d-flex flex-wrap justify-content-center"> <!--display: flex-->
+                    <div>
+                        <h1>2345</h1>
+                        <p>Happy Client</p>
+                    </div>
+                    <div>
+                        <h1>6784</h1>
+                        <p>Cups Coffe</p>
+                    </div>
+                    <div>
+                        <h1>1056</h1>
+                        <p>Tickets Submitted</p>
+                    </div>
+                    <div>
+                        <h1>1239</h1>
+                        <p>Total Project</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h1>Purchase Whatevr You Want</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            
+            <div class="cards">
+                <div class="d-flex flex-row justify-content-center flex-wrap">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">PDF</h5>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in.
+                        </p>
+                        <div class="pricing">
+                            <h1>$77.99</h1>
+                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">PDF</h5>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in.
+                        </p>
+                        <div class="pricing">
+                            <h1>$77.99</h1>
+                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="title">
+                                <h5 class="card-title">PDF</h5>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            With supporting text below as a natural lead-in.
+                        </p>
+                        <div class="pricing">
+                            <h1>$77.99</h1>
+                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section-3 container-fluid p-0 text-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Download Our App for all Platform</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Eum exercitation alias perspiciatis omnis quod possimus odit voluptatum! 
+                        Sunt ea quasi praesetium, tenetur doloribus animi obcaecati, sint nemi quae laudantium iusto unde eaque nostrum nobis voluptatum </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-right">
+                    <div class="desktop shadow-lg">
+                        <div class="d-flex flex-row justify-content-center">
+                            <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                            <div class="text-left">
+                                <h3 class="pt-1 m-0">Desktop</h3>
+                                <p class="p-0 m-0"> On website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-left">
+                    <div class="desktop shadow-lg">
+                        <div class="d-flex flex-row justify-content-center">
+                            <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+                            <div class="text-left">
+                                <h3 class="pt-1 m-0">Mobile</h3>
+                                <p class="p-0 m-0"> On Play Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
