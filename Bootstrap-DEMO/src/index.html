@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Boostrap 1</title>
+    <!-- Tạo logo trên tên của tab trang web -->
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     <!-- setup webfont with cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <!-- Bootstrap 4.6.x -->
@@ -21,12 +23,15 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  -->
     <!-- Js
         <script src="bootstrap/js/bootstrap.js"></script>  -->
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
         <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Books</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-book-reader fa-2"></i>
+                Books</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,16 +73,16 @@
 
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-7 col-sm-12 text-white">
                     <h6>AUTHOR: DAILY TUITION</h6>
                     <h1>EXCITING ADVENTURE</h1>
-                    <p>Loren ipsum dolor sit amet, consectetur adipisicing elit. Soluta incidunt quis maxie voluptatibus ac natus libero quia nisi eum, officiis cum perferendis non alias nihil reiciendis consectetur maiores odit veniam!</p>
-                    <button class="btn btn-light">
+                    <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi expedita.</p>
+                    <button class="btn btn-light primary-btn px-5 py-2">
                         By now for $5.99
                     </button>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="../image/header-img.png"> <!-- link hình ảnh từ như mục khác (image)-->
+                    <img src="../image/header-img.png" > <!-- link hình ảnh từ như mục khác (image)-->
                 </div>
             </div>
             
@@ -85,8 +90,9 @@
     </header>
 
     <main>
+<!-- section-1 -->
         <section class="section-1">
-            <div class="container">
+            <div class="container text-center">
                 <div class="row">
                 <div class="col-md-6 col-12">
                     <div>
@@ -108,35 +114,38 @@
                 </div>
             </div>
         </section>
+<!-- end section-1 -->
 
+<!-- section-2 -->
         <section class="section-2 container-fluid p-0">
-            <div class="content text-center">
-                <h1>Some Features That Us Unique</h1>
-                <p>Loren ipsum dolor sit, amet consectetur adipisicing elit. Vitae, eum?</p>
+            <div class="cover">
+                <div class="content text-center">
+                    <h1>Some Features That Us Unique</h1>
+                    <p>Loren ipsum dolor sit, amet consectetur adipisicing elit. Vitae, eum?</p>
+                </div>
             </div>
-
             <div class="container-fluid text-center">
-                <div class="d-flex flex-wrap justify-content-center"> <!--display: flex-->
-                    <div>
+                <div class="d-flex flex-wrap justify-content-center numbers"> <!--display: flex-->
+                    <div class="rect">
                         <h1>2345</h1>
                         <p>Happy Client</p>
                     </div>
-                    <div>
+                    <div class="rect">
                         <h1>6784</h1>
                         <p>Cups Coffe</p>
                     </div>
-                    <div>
+                    <div class="rect">
                         <h1>1056</h1>
                         <p>Tickets Submitted</p>
                     </div>
-                    <div>
+                    <div class="rect">
                         <h1>1239</h1>
                         <p>Total Project</p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center">
+            <div class="purchase text-center">
                 <h1>Purchase Whatevr You Want</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             
@@ -145,52 +154,54 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title">E-book</h5>
                             </div>
-                        </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing">
+                                <h1>$77.99</h1>
+                                <a href="#" class="btn btn-dark py-2 px-5 py-2 mb-5">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-body">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title">E-book</h5>
                             </div>
-                        </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing">
+                                <h1>$99.99</h1>
+                                <a href="#" class="btn btn-dark py-2 px-5 py-2 mb-5">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
                 
                     <div class="card">
                         <div class="card-body">
                             <div class="title">
-                                <h5 class="card-title">PDF</h5>
+                                <h5 class="card-title">E-book</h5>
                             </div>
-                        </div>
-                        <p class="card-text">
-                            With supporting text below as a natural lead-in.
-                        </p>
-                        <div class="pricing">
-                            <h1>$77.99</h1>
-                            <a href="#" class="btn btn-dark py-2">Purchase Now</a>
+                            <p class="card-text">
+                                With supporting text below as a natural lead-in.
+                            </p>
+                            <div class="pricing">
+                                <h1>$58.99</h1>
+                                <a href="#" class="btn btn-dark py-2 px-5 py-2 mb-5">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </section>
+<!-- end section-2 -->
 
+<!-- section-3 -->
         <section class="section-3 container-fluid p-0 text-center">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -219,7 +230,7 @@
                         <div class="d-flex flex-row justify-content-center">
                             <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
                             <div class="text-left">
-                                <h3 class="pt-1 m-0">Mobile</h3>
+                                <h3 class="pt-1 m-0">On Mobile</h3>
                                 <p class="p-0 m-0"> On Play Store</p>
                             </div>
                         </div>
@@ -227,6 +238,9 @@
                 </div>
             </div>
         </section>
+<!-- end section-3 -->
+
+<!-- section-4 -->
     </main>
 
     <footer>
