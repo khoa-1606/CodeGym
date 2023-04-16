@@ -135,7 +135,7 @@ header .container .col-md-7 p {
     border-radius: 0.5em;
     box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
 }
-.number .rect h1 {
+.numbers .rect h1 {
     font-size: 5rem;
     color: tomato;
 }
@@ -204,4 +204,52 @@ header .container .col-md-7 p {
 .section-3 .desktop p {
     font-size: 2vmin;
 }
+/* section-4 */
+.section-4 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+.section-4 .team {
+    padding: 10vmin 4vmin;
+}
+.section-4 .card {
+    width: 22em;
+    margin-top: 10vmin;
+}
+.section-4 .card .card-text {
+    padding: 0.5e;
+}
+.section-4 .card-body a {
+    font-size: 1.5em;
+}
+.section-4 .carousel-item {
+    padding-left: 3rem;
+}
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
 
+/* footer */
+footer {
+    background: #333;
+    padding: 14vmin 18vmin;
+}
+footer p span {
+    color: #ff512f;
+}
+footer input {
+    border: none !important;
+}
+footer input::placeholder {
+    color: white !important;
+}
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+}
+footer .column i {
+    color: #dd2476;
+}
+footer .column i {
+    padding: 0 0.5em;
+}
