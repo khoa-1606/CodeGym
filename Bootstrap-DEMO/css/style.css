@@ -237,7 +237,7 @@ footer {
 }
 footer p span {
     color: #ff512f;
-}
+} 
 footer input {
     border: none !important;
 }
@@ -252,4 +252,12 @@ footer .column i {
 }
 footer .column i {
     padding: 0 0.5em;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
 }
