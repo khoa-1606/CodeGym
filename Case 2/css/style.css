@@ -1,0 +1,18 @@
+body {
+    background-color: #ebf4fe;
+}
+.menu img {
+    height: 45px;
+}
+.nav {
+    padding-left: 80px;
+}
+.nav-item {
+    padding: 0 20px;
+    line-height: 45px;
+    font-weight: bold;
+}
+.button {
+    margin: 0 10px;
+    border-radius: 10px;
+}

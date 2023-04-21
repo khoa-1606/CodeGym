@@ -9,8 +9,7 @@
     <!-- Tạo logo trên tên của tab trang web -->
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     <!-- setup webfont with cdn -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <!-- Bootstrap 4.6.x -->
     <!-- link bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
     <!-- CSS -->
@@ -35,10 +34,315 @@
     <link rel="stylesheet" href="../css/mobile.css">
     <script src="../js/main.js"></script>
     
+    <style>
+        body {
+            background-color: #ebf4fe;
+        }
+        .menu img {
+            height: 45px;
+        }
+        .nav {
+            padding-left: 80px;
+        }
+        .nav-item {
+            padding: 0 20px;
+            line-height: 45px;
+            font-weight: bold;
+        }
+        .button {
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-weight: bold;
+            color: #062b53;
+            font-size: 60px;
+        }
+        .border-light {
+            color: #007bff;
+        }
+        .card {
+            border-radius: 10px;
+            border: 0;
+            height: 330px;
+        }
+        .card-img-top {
+            border-radius: 10px;
+        }
+        .category {
+            font-size: 10px;
+            background: #ebf4fe;
+            border-radius: 8px;
+            padding: 5px 15px;
+        }
+        .price {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .info {
+            color: rgb(126, 125, 125);
+            font-size: 15px;
+        }
+        .rate {
+            color: #007bff;
+            font-size: 12px;
+        }
+        .rate i {
+            color: #3e90ff;
+        }
+        .arrow {
+            background: #738fad;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 30px;
+        }
+        .arrow i {
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="container">
+            <div class="row menu mt-3">
+                <div class="col-4">
+                    <img src="../image/logo1.png" alt="logo">                       
+                </div>
+                <!-- <div class="mr-auto"></div> -->
+                <div class="col-8">
+                    <div class="row">
+                        <div class="nav-item">Home</div>
+                        <div class="nav-item">Course</div>
+                        <div class="nav-item">Service</div>
+                        <div class="nav-item">Testimonial</div>
+                        <div class="nav-item">Contact</div> 
+                        <button class="button btn btn-out-line-primary" style="height: 48px; width: 100px; border: 1px solid #007bff;">Login</button>
+                        <button class="button btn btn-primary" style="height: 48px; width: 100px;">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row banner mt-5 pt-5">
+                <div class="col-5 m-auto">
+                    <h1>Learn more and make success the result</h1>
+                </div>
 
+                <div class="col-2"></div>
+
+                <div class="col-5">
+                    <span class="border border-light" style="background-color: white;"> - The best E-Learning Platform</span>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor eiusmod.</p>
+                    <button class="button btn btn-primary" style="height: 50px; width: 200px;">Show all Courses</button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item1.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">Development</div>
+                            <div class="price">$255</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            Become a professional designer be with passion & dignity
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (2,539)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item2.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">UI/UX Design</div>
+                            <div class="price">$180</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            Java programming A-Z fully classes with full task
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (1,5559)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item3.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">Art & Craft</div>
+                            <div class="price">$225</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            You will fell in love with this mustly if you have desire
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (4,4000)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item4.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">Lifestyle</div>
+                            <div class="price">$228</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            Be passionated with your regularly exercise and stay fit
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (2,539)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item5.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">Business</div>
+                            <div class="price">$320</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            Grow your business by mastered in some technique
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (2,3399)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card p-1 mt-4">
+                        <img src="../image/item6.png" class="card-img-top" alt="...">
+                        <div class="d-flex justify-content-between ml-2 mr-2 mt-2">
+                            <div class="category">Marketing</div>
+                            <div class="price">$225</div>
+                        </div>
+
+                        <div class="d-flex name ml-2">
+                            Top 10 tips to grow up audience to progress business
+                        </div>
+                        <div class="d-flex justify-content-between m-2 info">
+                            <div><i class="fas fa-book-open"></i> &nbsp; 20 Lession</div>
+                            <div><i class="fas fa-user-friends"></i> &nbsp; 237 Students</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between m-2">
+                            <div class="rate mt-1">
+                                5.0
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                (4,5609)
+                            </div>
+                            <div>
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </header>
 
     <main>
@@ -46,7 +350,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
     
 </body>
