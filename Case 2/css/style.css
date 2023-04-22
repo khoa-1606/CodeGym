@@ -16,3 +16,75 @@ body {
     margin: 0 10px;
     border-radius: 10px;
 }
+h1 {
+    font-weight: bold;
+    color: #062b53;
+    font-size: 60px;
+}
+.border-light {
+    color: #007bff;
+}
+header .row .col-12 p {
+    padding-left: 25vmin;
+    padding-right: 25vmin;
+    font-size: 18px;
+}
+.card {
+    border-radius: 10px;
+    border: 0;
+    height: 330px;
+}
+.card-img-top {
+    border-radius: 10px;
+}
+.category {
+    font-size: 10px;
+    background: #ebf4fe;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+.price {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.name {
+    font-weight: bold;
+    font-size: 15px;
+}
+.info {
+    color: rgb(126, 125, 125);
+    font-size: 15px;
+}
+.rate {
+    color: #007bff;
+    font-size: 12px;
+}
+.rate i {
+    color: #3e90ff;
+}
+.arrow {
+    background: #738fad;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.arrow i {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.round {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    /* display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%; */
+}
