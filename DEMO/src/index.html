@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KH Shop</title>
+
+        <!-- Tạo logo trên tên của tab trang web -->
+        <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+        <!-- setup webfont with cdn -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+        <!-- Bootstrap 4.6.x -->
+        <!-- link bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- Bundle - Js-->
+        
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+                  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+                  crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        
+        <!-- Download bootstrap 4.6.x ve may va giai nen -> chep file vao project-->
+        <!-- CSS
+            <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  -->
+        <!-- Js
+            <script src="bootstrap/js/bootstrap.js"></script>  -->
+    
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/mobile.css">
+        <script src="../js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- nav -->
+        <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" style="width: 120px; height: 50px; margin-left: -50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-align-right text-light"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div class="mr-auto"></div> <!-- khoảng cách từ Books đến Home-->
+                
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">TRANG CHỦ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  
+                    aria-haspopup="true" aria-expanded="false">
+                    CPU
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Techzones Intel Core-i5-9400f</a>
+                    <a class="dropdown-item" href="#">Techzones Intel Core-i5-9600k</a>
+                    <a class="dropdown-item" href="#">Techzones Intel Core-i9-9900k</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  
+                    aria-haspopup="true" aria-expanded="false">
+                    Ổ CỨNG
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">HDD</a>
+                    <a class="dropdown-item" href="#">SSD</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MAINBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RAM</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  
+                    aria-haspopup="true" aria-expanded="false">
+                    KEYBOARD
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Keychron K8 pro</a>
+                    <a class="dropdown-item" href="#">Keychron K4 pro</a>
+                    <a class="dropdown-item" href="#">Keychron K5</a>
+                    <a class="dropdown-item" href="#">Keychron V2</a>
+                    <a class="dropdown-item" href="#">Keychron Q6</a>
+                    <a class="dropdown-item" href="#">Keychron K7</a>
+                    <a class="dropdown-item" href="#">Logitech ProX Gaming</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LIÊN HỆ</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="row">
+            <div class="col-12">
+                <img src="../img/qc1.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- end nav -->
+    </header>
+</body>
+</html>
