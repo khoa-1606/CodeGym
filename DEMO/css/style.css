@@ -140,6 +140,7 @@ header .container .col-md-7 p {
     padding-bottom: 35px;
 }
 .row .col-3 .card {
+    display: grid;
     margin: auto;
     border: 2px solid #333;
     border-radius: 10px;
@@ -217,6 +218,113 @@ header .container .col-md-7 p {
 } */
 
 /* section 2 */
+#testimonial {
+    width: 100%;
+    padding-right: 50px;
+}
+.testimonial-row {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px 3px lightcoral;
+    cursor: pointer;
+    transition: transform .5s;
+    height: 500px; /*bai mau 3 o k bang nhau phai them height*/
+}
+.testimonial-col p {
+    font-size: 14px;
+}
+.more {
+    width: 100%;
+    height: 350px;
+}
+.more img {
+    width: 100%;
+    height: 300px;
+}
+.keyboard {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.keyboard img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.info .bi {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #363939;
+}
+.testimonial-col:hover {
+    transform: translateY(7px);
+}
+.buy2 {
+    float: left;
+    margin-top: -80px;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+}
+.buy2:hover {
+    background-color: red;
+    color: white;
+}
+.price2 {
+    margin-top: -70px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.more > .xt{
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px ;
+    top: 20%;
+    left: 10%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 100px;
+    margin-left: 80px;
+    z-index: 1;
+}
+.more:hover > .xt{
+    opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section .. */
 .gallery {
     display: flex;
     height: 200px;
