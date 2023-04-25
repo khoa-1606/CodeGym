@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bggradient: linear-gradient(to bottom, #333, #ffffff);
+    --sniglet-font: "siglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--bggradient);
+    /* background-image: url('../img/keyboard/keychron-k4-pro-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; */
+}
+header a {
+    font-family: var(--sniglet-font);
+    color: white;
+}
+/* header */
+header a {
+    font-size: 0.9em;
+}
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+/* kich thuoc anh tren banner */
+header .row .col-12 img {
+    width: 100%;
+}
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+/* font chu - Rubik*/
+header .container .col-md-7 {
+    font-family: "Rubik", sans-serif;
+}
+header .container .col-md-7 h1 {
+    padding: 0.1em 0em;
+    font-size: 8.5vmin;
+    font-weight: bold;
+}
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}
+.primary-btn {
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* end header */
+/* -------------------------------------- */
+/* nav */
+.navbar {
+    height: 10vmin;
+    z-index: 1;
+}
+.navbar-brand {
+    padding-left: 8rem;
+}
+.nav-item:last-child {
+    padding-right: 10rem;
+}
+.nav-item {
+    padding: 0.9rem;
+}
+.nav-link:hover {
+    color: red;
+}
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border: 3px solid red;
+    position: relative;
+    background-color: #333;
+}
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all .5s;
+}
+.button::before {
+    top: -10px;
+    left: -10px;
+    border-width: 3px 0 0 3px;
+}
+.button::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 3px 3px 0;
+}
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+}
+/* end nav */
+/* -------------------------------------- */
+/* carousel */
+.carousel-item img {
+    height: 550px;
+}
+/* search */
+/* .search-container {
+    float: right;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+} */
+.filter {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+/* section 1 */
+.name {
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+.row .col-3 .card {
+    display: grid;
+    margin: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 20rem; 
+    height: 25rem;
+}
+.row .col-3 .card .card-img-top {
+    width: 18rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.card .card-body {
+    text-align: center;
+}
+.card {
+    position: relative; /*giữ cho phần tử con .ct được chứa trong phần tử cha .card*/
+}
+
+.card > .ct{
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px ;
+    top: 15%;
+    left: 10%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 100px;
+    margin-left: 80px;
+    z-index: 1;
+}
+.card:hover {
+    transform: scale(1.15) translateZ(0);
+    background-size: 300px;
+}
+.card-text:hover {
+    color: red
+}
+.card:hover > .ct{
+    opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+}
+.info {
+    color: black;
+    font-size: 15px;
+}
+.buy {
+    float: left;
+    margin-top: -30px;
+    margin-left: 30px;
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+}
+.buy:hover {
+    background-color: red;
+    color: white;
+}
+.price {
+    margin-top: -20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* .card-grid:hover > .card:not(:hover) {
+    transform: scale(.9);
+}
+.card-grid:hover > .card:not(:hover) .card-background,
+.card-grid:hover > .card:not(:hover) .card-category {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+} */
+/* -------------------------------------- */
+/* section 2 */
+#testimonial {
+    width: 100%;
+    padding-right: 50px;
+}
+.testimonial-row {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 2px lightgray;
+    cursor: pointer;
+    transition: transform .5s;
+    height: 430px; /*bai mau 3 o k bang nhau phai them height*/
+}
+.testimonial-col p {
+    font-size: 20px;
+}
+.more {
+    width: 100%;
+    height: 350px;
+}
+.more img {
+    width: 100%;
+    height: 250px;
+}
+.keyboard {
+    margin: 20px 0;
+}
+.keyboard h4 {
+    text-align: center;
+}
+.keyboard img {
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.keyboard h4:hover {
+    color: red;
+}
+.testimonial-col:hover {
+    transform: translateY(7px);
+}
+.buy2 {
+    float: left;
+    margin-top: -80px;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333;
+}
+.buy2:hover {
+    background-color: red;
+    color: white;
+}
+.price2 {
+    margin-top: -70px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.more > .xt{
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px ;
+    top: 20%;
+    left: 10%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 100px;
+    margin-left: 80px;
+    z-index: 1;
+}
+.more:hover > .xt{
+    opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+}
+
+/* Animation */
+.name1 {
+    background-color: #ef0a0a;
+    height: 70px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    border-radius: 20px;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s;  
+    animation-name: example;  
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example 
+{  
+    0% {background-color: red}  
+    25% {background-color: rgb(182, 25, 25);}  
+    50% {background-color: rgb(241, 37, 37);}  
+    100% {background-color: rgb(255, 0, 0);}
+}
+@keyframes example
+{  
+    0% {background-color: red;}  
+    25% {background-color: rgb(182, 25, 25);}  
+    50% {background-color: rgb(241, 37, 37);}  
+    100% {background-color: rgb(255, 0, 0);}
+}
+.name1 p {
+    color: white; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 20px;
+    -webkit-animation: gg 700ms infinite;
+    -moz-animation: gg 700ms infinite;
+    -o-animation: gg 700ms infinite;
+    animation: gg 700ms infinite;
+}
+@-webkit-keyframes gg {
+    0% { color: #ffd000; }
+    50% { color: #fff; }
+    100% { color: #ffd000; }
+}
+@-moz-keyframes gg {
+    0% { color: #ffd000; }
+    50% { color: #fff; }
+    100% { color: #ffd000; }
+}
+@-o-keyframes gg {
+    0% { color: #ffd000; }
+    50% { color: #fff; }
+    100% { color: #ffd000; }
+}
+@keyframes gg {
+    0% { color: #ffd000; }
+    50% { color: #fff; }
+    100% { color: #ffd000; }
+}
+.card1 {
+    border-radius: 10px;
+    border: 0;
+    height: 350px;
+    border: 2px solid red;
+    display: grid;
+    place-content: center;
+}
+.card1:hover {
+    border: 3px solid orange;
+}
+.card1 > .xt1{
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px ;
+    top: 20%;
+    left: 20%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 100px;
+    margin-left: 70px;
+    z-index: 1;
+}
+.card1:hover > .xt1{
+    opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+}
+.card1 img {
+    margin-top: 50px;
+    width: 60%;
+    height: 180px;
+}
+.category {
+    font-size: 10px;
+    background: red;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: white;
+}
+.price {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.name2 {
+    font-size: 18px;
+}
+.info2 {
+    color: black;
+    font-size: 15px;
+}
+.gig p {
+    text-decoration: line-through;
+    color: black;
+}
+.rate {
+    color: #007bff;
+    font-size: 12px;
+}
+.rate i {
+    color: #3e90ff;
+}
+.arrow {
+    background: #738fad;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.arrow i {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.round {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+    /* text-align: center;
+    line-height: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section .. */
+.gallery {
+    display: flex;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.gallery > .image {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: brightness(70%);
+}
+.gallery > .image:hover {
+    flex: 1 1 280px;
+    filter: drop-shadow(0 2px 16px red) contrast(110%);
+}
+.gallery > .image p {
+    z-index: 1;
+    margin-top: -100px;
+    color: white;
+}
+
+
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (max-width: 900px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) { 
+    .card {
+        width: 15rem;
+        height: 20rem;
+    }
+}
