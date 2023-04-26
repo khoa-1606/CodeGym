@@ -112,15 +112,52 @@ header .container .col-md-7 p {
 .carousel-item img {
     height: 550px;
 }
+.carousel-indicators,
+.carousel-control-prev, 
+.carousel-control-next {
+    display: none;
+}
 /* end carousel */
 /* search */
 /* .search-container {
-    float: right;
-    max-width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 24px;
+    cursor: pointer;
+    transition: width 500ms
+        cubic-bezier(0.68, -0.55, 0.8, 1.5s);
+    overflow: hidden;
+}
+.search-container.active {
+    width: 450px;
+    justify-content: flex-start;
+    cursor: default;
+}
+.search-container i {
+    font-size: 22px;
+}
+input {
+    display: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+i.fa-times {
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.search-container.active > :is(i, input) {
+    display: block;
 } */
+/* --------------- */
 .filter {
     float: right;
     height: 20px;
@@ -139,13 +176,13 @@ header .container .col-md-7 p {
     border-radius: 5px;
     padding-top: 7px;
 }
-.section-1 .row .col-3 .card {
+.section-1 .row .card {
     display: grid;
-    margin: auto;
     border: 2px solid #333;
     border-radius: 10px;
     width: 20rem; 
     height: 25rem;
+    margin-left: 15px;
 }
 .section-1 .row .col-3 .card .card-img-top {
     width: 18rem;
@@ -211,6 +248,141 @@ header .container .col-md-7 p {
     margin-top: -20px;
     margin-right: 20px;
     font-size: 20px;
+}
+/* ------------------------------------ */
+/* Medium devices (tablets, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .narbar-brand {
+        padding-left: 1rem;
+    }
+    .navbar-nav {
+        background-color: #333;
+        z-index: 1;
+        height: 550px;
+        width: 280px;
+        float: right;
+        text-align: right;
+    }
+    .nav-item .dropdow-menu{
+        background-color: #484848;
+    }
+    .bt {
+        display: flex;
+    }
+    .carousel {
+        height: 400px;
+    }
+    .carousel-inner {
+        height: 400px;
+    }
+    .carousel-item {
+        height: 400px;
+    }
+    .carousel-indicators,
+    .carousel-control-prev, 
+    .carousel-control-next {
+        display: none;
+    }
+    .row .col-12 .filter {
+        font-size: 12px;
+    }
+    .filter select {
+        width: 100px;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (max-width: 900px) {
+    .narbar-brand {
+        padding-left: 1rem;
+    }
+    .navbar-nav {
+        background-color: #333;
+        z-index: 1;
+        height: 550px;
+        width: 280px;
+        float: right;
+        text-align: right;
+    }
+    .nav-item .dropdow-menu{
+        background-color: #484848;
+    }
+    .bt {
+        display: flex;
+    }
+    .carousel {
+        height: 600px;
+    }
+    .carousel-inner {
+        height: 600px;
+    }
+    .carousel-item {
+        height: 600px;
+    }
+    .carousel-indicators,
+    .carousel-control-prev, 
+    .carousel-control-next {
+        display: none;
+    }
+    .row .col-12 .filter {
+        font-size: 12px;
+    }
+    .filter select {
+        width: 100px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) { 
+    .navbar {
+        height: 10vmin;
+        margin-left: -6em;
+    }
+    .nav-item:last-child {
+        padding-right: 10rem;
+    }
+    .nav-item {
+        font-size: 12px;
+    }
+    .nav-link:hover {
+        color: red;
+    }
+    .button {
+        text-decoration: none;
+        font-size: 12px;
+        color: white;
+        border: 2px solid red;
+        position: relative;
+        background-color: #333;
+        height: 30px; 
+        width: 70px; 
+        /* margin-left: 20px; 
+        margin-top: 15px; */
+    }
+    .button::before,
+    .button::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: inherit;
+        transition: all .5s;
+    }
+    .button::before {
+        top: -5px;
+        left: -5px;
+        border-width: 2px 0 0 2px;
+    }
+    .button::after {
+        bottom: -5px;
+        right: -5px;
+        border-width: 0 2px 2px 0;
+    }
+    .button:hover::before,
+    .button:hover::after {
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+    }
 }
 /* end section 1 */
 

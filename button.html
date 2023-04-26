@@ -46,6 +46,45 @@
             align-items: center;
             height: 500px;
         }
+        /* ----- */
+        .search-container {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 28px;
+        gap: 24px;
+        cursor: pointer;
+        transition: width 500ms
+            cubic-bezier(0.68, -0.55, 0.8, 1.5s);
+        overflow: hidden;
+        }
+        .search-container.active {
+            width: 450px;
+            justify-content: flex-start;
+            cursor: default;
+        }
+        .search-container i {
+            font-size: 22px;
+        }
+        input {
+            display: none;
+            outline: none;
+            border: none;
+            font-size: 18px;
+            background-color: transparent;
+        }
+        i.fa-times {
+            display: none;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        .search-container.active > :is(i, input) {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -54,5 +93,26 @@
             <a href="#" class="button"> Learn more</a>
         </div>
     </div>
+
+
+    <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input class="search-input" type="text" placeholder="Search...">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <script>
+        // search
+        const searchWrapper = document.querySelector(".search-container");
+        const closeBtn = document.querySelector(".fa-times");
+
+        searchWrapper.addEventListener("click", () => {
+            searchWrapper.classList.add("active");
+        });
+        closeBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            searchWrapper.classList.remove("active");
+        });
+    </script>
 </body>
 </html>
