@@ -1,0 +1,668 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bggradient: linear-gradient(to bottom, #333, #ffffff);
+    --sniglet-font: "siglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* header */
+header {
+    background: var(--bggradient);
+}
+header a {
+    font-family: var(--sniglet-font);
+    color: white;
+    font-size: 0.9em;
+}
+/* end header */
+/* nav */
+.navbar {
+    height: 10vmin;
+    z-index: 1;
+}
+.navbar-brand {
+    padding-left: 8rem;
+}
+.nav-item:last-child {
+    padding-right: 10rem;
+}
+.nav-item {
+    padding: 0.9rem;
+}
+.nav-link:hover {
+    color: red;
+}
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border: 3px solid red;
+    position: relative;
+    background-color: #333;
+}
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all .5s;
+}
+.button::before {
+    top: -10px;
+    left: -10px;
+    border-width: 3px 0 0 3px;
+}
+.button::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 3px 3px 0;
+}
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+}
+/* end nav */
+
+/* carousel */
+.carousel-item img {
+    height: 550px;
+}
+.carousel-indicators,
+.carousel-control-prev, 
+.carousel-control-next {
+    display: none;
+}
+/* end carousel */
+.filter {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.dd {
+    margin-top: -1.5vmin;
+    font-family: var(--sniglet-font);
+}
+.dd a {
+    text-decoration: none; 
+    color: black;
+}
+.dd a:hover {
+    color: orange;
+}
+.namee {
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 7px;
+}
+/* SP */
+.cards {
+    display: grid;
+    margin-left: 3vmin;
+    grid-template-columns: 23vw 23vw 23vw 23vw;
+    gap: 15px;
+}
+.sp {
+    border: 3px solid #333;
+    border-radius: 10px;
+    position: relative;
+    width: 23vw;
+    height: 50vh;
+}
+.sp:hover {
+    border: 3px solid red;
+        transform: translateY(2px) scale(0.98);
+        opacity: 1;
+}
+.sp .hinhanh img {
+    width: 100%;
+    height: 33vh;
+    border-radius: 10px;
+}
+.sp .hinhanh > .ct {
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    padding: 5px 10px ;
+    top: 15%;
+    left: 20%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 100px;
+    margin-left: 45px;
+}
+.sp .hinhanh:hover > .ct {
+    opacity: 1;
+}
+.name {
+    padding: 15px;
+    text-align: center;
+    height: 45px;
+    font-size: 18px;
+}
+.name a {
+    text-decoration: none; 
+    color: black;
+}
+.name a:hover {
+    color: red;
+}
+.title {
+    text-align: center;
+    color: red;
+    background-color: #333;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+.cards .hinhanh .info {
+    height: 50px;
+}
+.cards .hinhanh .info .buy {
+    float: left;
+    margin-left: 15px;
+    width: 50px;
+    height: 35px;
+    border-radius: 15px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #333;
+}
+.cards .hinhanh .info .buy:hover {
+    background-color: red;
+    color: white;
+}
+.cards .hinhanh .info .price {
+    font-size: 2.5vh;
+    height: 1vh;
+}
+.cards .hinhanh .info .price p {
+    font-weight: bold;
+    float: right;
+}
+.cards .hinhanh .info .price2 {
+    font-size: 12px;
+    margin-top: 5px;
+    height: 1vh;
+}
+.cards .hinhanh .info .price2 p {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    text-decoration: line-through;
+}
+.cards .mn {
+    display: grid;
+    gap: 0;
+}
+
+/* -------------------------------------- */
+/* Large devices (desktops, 900px and up) - 850*/
+@media (min-width:600px) and (max-width: 900px) {
+    .navbar {
+        height: 6vmin;
+    }
+    .narbar-brand {
+        margin-left: 5px;
+    }
+    .navbar-toggler {
+        margin-top: -1vmin;
+    }
+    .navbar-nav {
+        background-color: #333;
+        z-index: 1;
+        height: 65vmin;
+        width: 35vmin;
+        float: right;
+        text-align: right;
+        position: relative;
+    }
+    .navbar-nav .nav-item .dropdown-menu {
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+        background-color: #bbb;
+        width: 10vw;
+    }
+    .bt {
+        width: 50vmin;
+        margin-left: -18vmin;
+    }
+    .button {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        border: 3px solid red;
+        position: relative;
+        background-color: #333;
+        height: 40px; 
+        width: 100px; 
+        margin-left: 20px; 
+        margin-top: 15px;
+    }
+    .button::before,
+    .button::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: inherit;
+        transition: all .5s;
+    }
+    .button::before {
+        top: -10px;
+        left: -10px;
+        border-width: 3px 0 0 3px;
+    }
+    .button::after {
+        bottom: -10px;
+        right: -10px;
+        border-width: 0 3px 3px 0;
+    }
+    .button:hover::before,
+    .button:hover::after {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+    }
+    #carouselExampleCaptions {
+        height: 40vh;
+    }
+    .carousel-inner, .carousel-item {
+        height: 40vh;
+    }
+    .carousel-item img {
+        height: 40vh;
+    }
+    .carousel-indicators,
+    .carousel-control-prev, 
+    .carousel-control-next {
+        display: none;
+    }
+    
+    .row .col-12 .filter {
+        border: 0;
+        float: right;
+        height: 4vh;
+        line-height: 20px;
+        padding-bottom: 2px;
+        margin-right: 20px;
+        margin-top: 2px;
+        font-size: 12px;
+    }
+    .filter select {
+        width: 100px;
+    }
+    .dd {
+        margin-top: -1.5vmin;
+        font-family: var(--sniglet-font);
+    }
+    .dd a {
+        text-decoration: none; 
+        color: black;
+    }
+    .dd a:hover {
+        color: orange;
+    }
+    .title {
+        margin-top: -1.5vmin;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* grid-template-columns: 30vw 30vw 30vw; */
+        gap: 10px;
+    }
+    .sp {
+        border: 3px solid #333;
+        border-radius: 10px;
+        position: relative;
+        width: 30vw;
+        height: 42vw;
+        margin-left: -16px;
+    }
+    .sp:hover {
+        border: 3px solid red;
+        transform: translateY(2px) scale(0.98);
+        opacity: 1;
+    }
+    .sp .hinhanh img {
+        width: 100%;
+        height: 26vh;
+        border-radius: 5px;
+    }
+    .sp .hinhanh > .ct{
+        position: absolute;
+        color: black;
+        font-size: 22px;
+        padding: 5px 10px ;
+        top: 15%;
+        left: 9%;
+        opacity: 0;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: all 0.8s ;
+        background: red;
+        margin-top: 100px;
+        margin-left: 45px;
+    }
+    .sp .hinhanh:hover > .ct{
+        opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+    }
+    .name {
+        padding: 15px;
+        text-align: center;
+        height: 45px;
+        font-size: 18px;
+    }
+    .name a {
+        text-decoration: none; 
+        color: black;
+    }
+    .name a:hover {
+        color: red;
+    }
+    /* .title {
+        text-align: center;
+        color: red;
+        background-color: #333;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+    } */
+    .cards .hinhanh .info {
+        height: 50px;
+    }
+    .cards .hinhanh .info .buy {
+        float: left;
+        margin-left: 5px;
+        width: 50px;
+        height: 35px;
+        border-radius: 15px;
+        line-height: 35px;
+        text-align: center;
+        background-color: #333;
+    }
+    .cards .hinhanh .info .buy:hover {
+        background-color: red;
+        color: white;
+    }
+    .cards .hinhanh .info .price {
+        font-size: 2vh;
+        height: 1vh;
+    }
+    .cards .hinhanh .info .price p {
+        font-weight: bold;
+        float: right;
+    }
+    .cards .hinhanh .info .price2 {
+        font-size: 12px;
+        margin-top: 5px;
+        height: 1vh;
+    }
+    .cards .hinhanh .info .price2 p {
+        font-size: 14px;
+        font-weight: bold;
+        float: right;
+        text-decoration: line-through;
+    }
+    .cards .mn {
+        display: grid;
+        gap: 0;
+    }
+}
+
+/* ------------------------------------ */
+/* Medium devices (tablets, 600px and up) - 590*/
+@media (min-width:500px) and (max-width: 600px) {
+    .navbar {
+        height: 10vmin;
+    }
+    .narbar-brand {
+        margin-left: 10px;
+    }
+    .navbar-toggler {
+        margin-top: -1vmin;
+    }
+    .navbar-nav {
+        background-color: #333;
+        z-index: 1;
+        height: 92vmin;
+        width: 50vmin;
+        float: right;
+        text-align: right;
+        position: relative;
+    }
+    .navbar-nav .nav-item .dropdown-menu {
+        position: absolute;
+        opacity: 1;
+        z-index: 1;
+        background-color: #bbb;
+        width: 10vw;
+    }
+    .bt {
+        width: 50vmin;
+        margin-left: -3vmin;
+    }
+    .button {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        border: 3px solid red;
+        position: relative;
+        background-color: #333;
+        height: 40px; 
+        width: 100px; 
+        margin-left: 20px; 
+        margin-top: 15px;
+    }
+    .button::before,
+    .button::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: inherit;
+        transition: all .5s;
+    }
+    .button::before {
+        top: -10px;
+        left: -10px;
+        border-width: 3px 0 0 3px;
+    }
+    .button::after {
+        bottom: -10px;
+        right: -10px;
+        border-width: 0 3px 3px 0;
+    }
+    .button:hover::before,
+    .button:hover::after {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+    }
+    #carouselExampleCaptions {
+        height: 30vh;
+    }
+    .carousel-inner, .carousel-item {
+        height: 30vh;
+    }
+    .carousel-item img {
+        height: 30vh;
+    }
+    .carousel-indicators,
+    .carousel-control-prev, 
+    .carousel-control-next {
+        display: none;
+    }
+    
+    .row .col-12 .filter {
+        border: 0;
+        float: right;
+        height: 2vh;
+        line-height: 20px;
+        padding-bottom: 2px;
+        margin-right: 20px;
+        margin-top: 2px;
+        font-size: 12px;
+    }
+    .filter select {
+        width: 100px;
+    }
+    .dd {
+        margin-top: -1.5vmin;
+        font-family: var(--sniglet-font);
+    }
+    .dd a {
+        text-decoration: none; 
+        color: black;
+    }
+    .dd a:hover {
+        color: orange;
+    }
+    .title {
+        margin-top: -2.5vmin;
+    }
+    .cards {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: 44vw 44vw;
+        gap: 10px;
+    }
+    .sp {
+        border: 3px solid #333;
+        border-radius: 10px;
+        position: relative;
+        width: 44vw;
+        height: 60vw;
+        margin-left: -10px;
+    }
+    .sp:hover {
+        border: 3px solid red;
+        transform: translateY(2px) scale(0.98);
+        opacity: 1;
+    }
+    .sp .hinhanh img {
+        width: 100%;
+        height: 26vh;
+        border-radius: 5px;
+    }
+    .sp .hinhanh > .ct{
+        position: absolute;
+        color: black;
+        font-size: 22px;
+        padding: 5px 10px ;
+        top: 15%;
+        left: 10%;
+        opacity: 0;
+        border-radius: 10px;
+        border: 2px solid white;
+        transition: all 0.8s ;
+        background: red;
+        margin-top: 100px;
+        margin-left: 45px;
+    }
+    .sp .hinhanh:hover > .ct{
+        opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+    }
+    .name {
+        padding: 15px;
+        text-align: center;
+        height: 45px;
+        font-size: 18px;
+    }
+    .name a {
+        text-decoration: none; 
+        color: black;
+    }
+    .name a:hover {
+        color: red;
+    }
+    .title {
+        text-align: center;
+        color: red;
+        background-color: #333;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+    }
+    .cards .hinhanh .info {
+        height: 50px;
+    }
+    .cards .hinhanh .info .buy {
+        float: left;
+        margin-left: 5px;
+        width: 50px;
+        height: 35px;
+        border-radius: 15px;
+        line-height: 35px;
+        text-align: center;
+        background-color: #333;
+    }
+    .cards .hinhanh .info .buy:hover {
+        background-color: red;
+        color: white;
+    }
+    .cards .hinhanh .info .price {
+        font-size: 2vh;
+        height: 1vh;
+    }
+    .cards .hinhanh .info .price p {
+        font-weight: bold;
+        float: right;
+    }
+    .cards .hinhanh .info .price2 {
+        font-size: 12px;
+        margin-top: 5px;
+        height: 1vh;
+    }
+    .cards .hinhanh .info .price2 p {
+        font-size: 14px;
+        font-weight: bold;
+        float: right;
+        text-decoration: line-through;
+    }
+    .cards .mn {
+        display: grid;
+        gap: 0;
+    }
+}
+
+/* footer */
+footer {
+    background: #484848;
+    /* padding: 14vmin 18vmin; */
+    color: white;
+}
+footer .container .col-3 hr {
+    color: white;
+    background: white;
+    border: 0;
+    height: 1px;
+}
+footer .container .col-4 hr {
+    color: white;
+    background: white;
+    border: 0;
+    height: 1px;
+}

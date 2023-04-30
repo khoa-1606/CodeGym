@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bggradient: linear-gradient(to bottom, #333, #ffffff);
+    --sniglet-font: "siglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* header */
+header {
+    background: var(--bggradient);
+}
+header a {
+    font-family: var(--sniglet-font);
+    color: white;
+    font-size: 0.9em;
+}
+header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin;
+}
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+/* kich thuoc anh tren banner */
+header .row .col-12 img {
+    width: 100%;
+}
+header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+/* font chu - Rubik*/
+header .container .col-md-7 {
+    font-family: "Rubik", sans-serif;
+}
+header .container .col-md-7 h1 {
+    padding: 0.1em 0em;
+    font-size: 8.5vmin;
+    font-weight: bold;
+}
+header .container .col-md-7 p {
+    padding: 1vmin 5vmin;
+}
+.primary-btn {
+    border-radius: 30px;
+    font-weight: bold;
+}
+/* end header */
+
+/* nav */
+.navbar {
+    height: 10vmin;
+    z-index: 1;
+}
+.navbar-brand {
+    padding-left: 8rem;
+}
+.nav-item:last-child {
+    padding-right: 10rem;
+}
+.nav-item {
+    padding: 0.9rem;
+}
+.nav-link:hover {
+    color: red;
+}
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    border: 3px solid red;
+    position: relative;
+    background-color: #333;
+}
+.button::before,
+.button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: inherit;
+    transition: all .5s;
+}
+.button::before {
+    top: -10px;
+    left: -10px;
+    border-width: 3px 0 0 3px;
+}
+.button::after {
+    bottom: -10px;
+    right: -10px;
+    border-width: 0 3px 3px 0;
+}
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+}
+/* end nav */
+
+/* carousel */
+.carousel-item img {
+    height: 550px;
+}
+.carousel-indicators,
+.carousel-control-prev, 
+.carousel-control-next {
+    display: none;
+}
+/* end carousel */
+/* search */
+/* .search-container {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 28px;
+    gap: 24px;
+    cursor: pointer;
+    transition: width 500ms
+        cubic-bezier(0.68, -0.55, 0.8, 1.5s);
+    overflow: hidden;
+}
+.search-container.active {
+    width: 450px;
+    justify-content: flex-start;
+    cursor: default;
+}
+.search-container i {
+    font-size: 22px;
+}
+input {
+    display: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+}
+i.fa-times {
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.search-container.active > :is(i, input) {
+    display: block;
+} */
+/* --------------- */
+.filter {
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.dd {
+    margin-top: -1.5vmin;
+    font-family: var(--sniglet-font);
+}
+.dd a {
+    text-decoration: none; 
+    color: black;
+}
+.dd a:hover {
+    color: orange;
+}
+
+/* zoom */
+.zoom {
+    width: max-content;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.zoom .hinh1 img {
+    width: 650px;
+}
+#imgZoom {
+    position: absolute;
+    left: 0;
+    transform: scale(1.5);
+    pointer-events: none;
+    --zoom-x: 50%;
+    --zoom-y: 50%;
+    clip-path: circle(
+        100px at var(--zoom-x) var(--zoom-y)
+    );
+    opacity: 0;
+}
+.hinh2 img {
+    display: inline-block;
+    width: 150px;
+    height: 12s0px;
+    margin-top: -50px;
+}
+
+/* sp */
+.namee {
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 8px;
+}
+.name {
+    width: 100%;
+    height: 500px;
+}
+.name1 {
+    height: 150px;
+    background-image: 
+        linear-gradient(
+            to top, #e5dbe1, #222222
+        );
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.name1 h2 {
+    color: red;
+    text-align: center;
+}
+.name1 p {
+    color: white;
+    margin-left: 10px;
+}
+.tc {
+    width: 100%;
+    height: 200px;
+}
+.tc img {
+    height: 200px;
+    width: 100%;
+}
+.name .info {
+    height: 50px;
+}
+.name .info .buy {
+    float: left;
+    margin-left: 15px;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #333;
+    margin-right: 25px;
+}
+.name .info .buy a {
+    text-decoration: none;
+    color: white;
+}
+.name .info .buy:hover {
+    background-color: red;
+    color: white;
+}
+.name .info .price {
+    font-size: 2.5vh;
+    height: 1vh;
+    margin-top: -25px;
+}
+.name .info .price p {
+    font-weight: bold;
+    float: right;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.name .info .price2 {
+    font-size: 12px;
+    margin-top: 5px;
+    height: 1vh;
+}
+.name .info .price2 p {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    text-decoration: line-through;
+}
+.info .mn {
+    display: grid;
+    gap: 0;
+}
+.loai {
+    font-size: 14px;
+    font-family: var(--Rubik)
+}
+h4, h5 {
+    color: blue;
+    font-weight: bold
+}
+.card {
+    box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 1);
+}
+.card:hover {
+    transform: scale(0.99);
+}
+.card a {
+    text-decoration: none;
+}
+.card .price {
+    color: red;
+    font-size: 18px;
+}
+.card .btn {
+    float: right;
+    margin-top: -45px;
+    background-color: #333;
+    border: 1px solid #333;
+}
+.card .btn:hover {
+    background-color: red;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background: #484848;
+    /* padding: 14vmin 18vmin; */
+    color: white;
+}
+footer .container .col-3 hr {
+    color: white;
+    background: white;
+    border: 0;
+    height: 1px;
+}
+footer .container .col-4 hr {
+    color: white;
+    background: white;
+    border: 0;
+    height: 1px;
+}

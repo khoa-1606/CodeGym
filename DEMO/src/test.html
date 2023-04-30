@@ -5,444 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- Tạo logo trên tên của tab trang web -->
-    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
-    <!-- setup webfont with cdn -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-    <!-- Bootstrap 4.6.x -->
-    <!-- link bootstrap : https://getbootstrap.com/docs/4.6/getting-started/introduction/ -->
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Bundle - Js-->
-    
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.4.js"
-              integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-              crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    
-    <!-- Download bootstrap 4.6.x ve may va giai nen -> chep file vao project-->
-    <!-- CSS
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  -->
-    <!-- Js
-        <script src="bootstrap/js/bootstrap.js"></script>  -->
-
-    <link rel="stylesheet" href="../css/test.css">
-    <!-- <link rel="stylesheet" href="../css/mobile.css"> -->
-    <script src="../js/main.js"></script>
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: 
+                linear-gradient(
+                    to top, #f064A3, #A97CDF
+                );
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .zoom {
+            width: max-content;
+            position: relative;
+        }
+        .zoom img {
+            width: 500px;
+        }
+        #imgZoom {
+            position: absolute;
+            left: 0;
+            transform: scale(1.5);
+            pointer-events: none;
+            --zoom-x: 50%;
+            --zoom-y: 50%;
+            clip-path: circle(
+                100px at var(--zoom-x) var(--zoom-y)
+            );
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <header>
-            <!-- nav -->
-            <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="../img/logo.png" style="width: 70px; height: 30px; margin-left: 5px; margin-bottom: 5px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-align-right text-light"></i>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
-                    <div class="mr-auto"></div> <!-- khoảng cách từ Books đến Home-->
-                    
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">TRANG CHỦ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CPU</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  
-                        aria-haspopup="true" aria-expanded="false">
-                        HARD DRIVE
-                        </a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">HDD</a>
-                        <a class="dropdown-item" href="#">SSD</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MAINBOARD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RAM</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <!-- class="nav-link dropdown-toggle" -> hiện thị dấu tam giác đánh dấu dropdown-->
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"  
-                        aria-haspopup="true" aria-expanded="false">
-                        KEYBOARD
-                        </a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Keychron K8 pro</a>
-                        <a class="dropdown-item" href="#">Keychron K4 pro</a>
-                        <a class="dropdown-item" href="#">Keychron K5</a>
-                        <a class="dropdown-item" href="#">Keychron V2</a>
-                        <a class="dropdown-item" href="#">Keychron Q6</a>
-                        <a class="dropdown-item" href="#">Keychron K7</a>
-                        <a class="dropdown-item" href="#">Logitech ProX Gaming</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LIÊN HỆ</a>
-                    </li>
-                        <div class="bt">
-                            <a href="index.html"><button class="button btn btn-primary" style="height: 40px; width: 100px; margin-left: 20px; margin-top: 15px;">Login</button></a>
-                            <a href="index.html"><button class="button btn btn-primary" style="height: 40px; width: 100px; margin-top: 15px; margin-left: 40px;">Register</button></a>
-                        </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            <!-- end nav -->
+    <div class="zoom">
+        <img src="../img/keyboard/Keychron-K3-ultra-switch-brown_1800x1800.jpg">
+        <img src="../img/keyboard/Keychron-K3-ultra-switch-brown_1800x1800.jpg" id="imgZoom">
+    </div>
 
-            <!-- carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/qc1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../img/pc2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../img/keyboard/bannerr.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </button>
-          </div>
-    </header>
+    <script>
+        let zoom = document.querySelector('.zoom');
+        let imgZoom = document.getElementById('imgZoom');
+        zoom.addEventListener('mousemove', (event)=>{
+            imgZoom.style.opacity = 1;
+            let positionPx = event.x - zoom.getBoundingClientRect().left;
+            let positionX = (positionPx / zoom.offsetWidth) * 100;
 
-    <main>
-        <!-- filter & search -->
-        <div class="row">
-            <!-- <div class="search-container">
-                <form action="#" method="get">
-                    <input type="text" placeholder="Tìm kiếm..." name="search">
-                    <button type="submit">Search</button>
-                </form>
-            </div> -->
-            <div class="col-12">
-                <div class="filter">
-                    <span>Hiển thị: 
-                </span>
-                    <span>
-                    <select>
-                        <option> Mới cập nhật</option>	
-                        <option> Giá: thấp đến cao</option>	
-                        <option> Giá: cao đến thấp</option>
-                </select>
-                </span>
-                <span>
-                    <input type="submit" value="Lọc" style="color: white; background-color: #6a707c; border-radius: 10px; width: 40px;">
-                </span>
-                </div>
-            </div>
-        </div>
+            let positionPy = event.y - zoom.getBoundingClientRect().top;
+            let positionY = (positionPy / zoom.offsetHeight) * 100;
 
+            imgZoom.style.setProperty('--zoom-x', positionX + '%');
+            imgZoom.style.setProperty('--zoom-y', positionY + '%');
 
-        <!-- keyboard -->
-        <div class="container-fluid mt-2">
-            <div class="row">
-                <div class="col-12 dd">
-                    <p style="font-size: 12px;">
-                        <a href="index.html" style="text-decoration: none; color: black;">Trang chủ</a> / 
-                        <a href="index.html" style="text-decoration: none; color: black;">Keyboard</a> / 
-                        <a href="keyboard.html" style="text-decoration: none; color: black;">Tổng hợp</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 title">
-                    <p>KEYBOARD</p>
-                </div>
-            </div>
-        </div>
+            let transformX = -(positionX - 50) / 3.5;
+            let transformY = -(positionY - 50) / 3.5;
 
-        <div class="container-fluid mt-3">
-            <div class="cards">
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/Logitech-ProX-Gaming.jpg" width="600" height="400">
-                    <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                    <div class="name"><a href="#" style="text-decoration: none; color: black;">Logitech ProX Gaming</a></div>
-                    <div class="d-flex justify-content-between m-2 info">
-                        <div class="buy">
-                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                        </div>
-                        <!-- <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>. <sup>đ</sup></p>
-                        </div> - -->
-                        <div class="price">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                            <p> 3.499.000 <sup>đ</sup></p>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/keychron-k7-1.jpg" width="600" height="400">
-                    <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                    <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K7</a></div>
-                    <div class="d-flex justify-content-between m-2 info">
-                        <div class="buy">
-                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                        </div>
-                        <!-- <div class="price2">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                            <p>. <sup>đ</sup></p>
-                        </div> - -->
-                        <div class="price">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                            <p>2.290.000 <sup>đ</sup></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/Keychron-K3-ultra-switch-brown_1800x1800.jpg" width="600" height="400">
-                    <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                    <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K3v2</a></div>
-                    <div class="d-flex justify-content-between m-2 info">
-                        <div class="buy">
-                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                        </div>
-                        <div class="price2">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                            <p>1.890.000 <sup>đ</sup></p>
-                    </div> -
-                        <div class="price">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                            <p style="color: red;">1.800.000 <sup>đ</sup></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/Ziyoulang-K87.jpg" width="600" height="400">
-                    <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                    <div class="name"><a href="#" style="text-decoration: none; color: black;">Ziyoulang K87 - yellow switch</a> </div>
-                    <div class="d-flex justify-content-between m-2 info">
-                        <div class="buy">
-                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                        </div>
-                        <div class="price2">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                            <p>580.000 <sup>đ</sup></p>
-                    </div> -
-                        <div class="price">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                            <p style="color: red;">570.000 <sup>đ</sup></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/ban-phim-co-edra-ek384-usb-rgb-huano-blue-sw-3.jpg" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Edra EK384</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                            <div class="buy">
-                                <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                            </div>
-                            <!-- <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>. <sup>đ</sup></p>
-                            </div> - -->
-                            <div class="price">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                                <p>849.000 <sup>đ</sup></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/ban_phim_co_keychron_k2.jpg" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K2</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                            <div class="buy">
-                                <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                            </div>
-                            <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>1.690.000 <sup>đ</sup></p>
-                        </div> -
-                            <div class="price">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                                <p style="color: red;">1.610.000 <sup>đ</sup></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/keychron-k8-2.png" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K8</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                            <div class="buy">
-                                <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                            </div>
-                            <!-- <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>. <sup>đ</sup></p>
-                            </div> - -->
-                            <div class="price">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                                <p>1.990.000 <sup>đ</sup></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/2323_ban_phim_co_keychron_k6.jpg" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K6</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                            <div class="buy">
-                                <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                            </div>
-                            <!-- <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>. <sup>đ</sup></p>
-                            </div> - -->
-                            <div class="price">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                                <p>1.890.000 <sup>đ</sup></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/keychron-k4v2.jpg" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K4v2</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                        <div class="buy">
-                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                        </div>
-                        <!-- <div class="price2">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                            <p>. <sup>đ</sup></p>
-                        </div> - -->
-                        <div class="price">
-                            <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                            <p>2.390.000 <sup>đ</sup></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            
-                <div class="sp">
-                    <div class="hinhanh">
-                        <img src="../img/keyboard/keychron-k10.jpg" width="600" height="400">
-                        <p class="ct"><a href="#" style="text-decoration: none;color: #fff;">Xem thêm</a></p>
-                        <div class="name"><a href="#" style="text-decoration: none; color: black;">Keychron K10</a></div>
-                        <div class="d-flex justify-content-between m-2 info">
-                            <div class="buy">
-                                <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                            </div>
-                            <!-- <div class="price2">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
-                                <p>. <sup>đ</sup></p>
-                            </div> - -->
-                            <div class="price">
-                                <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp;
-                                <p>2.590.000 <sup>đ</sup></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-4 mt-5">
-                    <img src="../img/logo.png" style="width: 150px;">
-                    <p class="text mt-3">Địa chỉ: ..., thành phố Trà Vinh, tỉnh Trà Vinh</p>
-                    <p>Hotline: 1900 160698</p>
-                    <a href="https://www.facebook.com/edward1606/" style="text-decoration: none; color: white;"><i class="fab fa-facebook-f"></i></a> &nbsp; &nbsp;
-                    <a href="#"><i class="fab fa-linkedin-in" style="color: #009dff;"></i></a> &nbsp; &nbsp;
-                    <a href="https://www.instagram.com/hi_imkhoa___/"  style="text-decoration: none; color: white;"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="col-3 mt-5">
-                    <h6 class="title-name mb-4" style="font-weight: bold;">Sản phẩm nổi bật</h6>
-                        <p><hr></p>
-                        <p>Mainboard MSI MEG X399 Creation</p>
-                        <p>Ram GSkill Trident Z5 RGB 64GB</p>
-                        <p>CPU Intel Core i9-13900K</p>
-                </div>
-                <div class="col-4 mt-5 ml-5">
-                    <h6 class="title-name mb-4" style="font-weight: bold;">Chính sách</h6>
-                        <p><hr></p>
-                        <p>Chính sách bảo hành</p>
-                        <p>Chính sách kiểm hàng và vận chuyển</p>
-                        <p>Chính sách thanh toán</p>
-                        <p>Chính sách đổi trả</p>
-                        <p>Chính sách bảo mật thông tin</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <hr>
-                    <p class="text-muted" style="text-align: center;">© Copyright 2023 - Emaill: huynhkhoavo1606@gmail.com</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+        })
+        zoom.addEventListener('mouseout', (event)=>{
+            imgZoom.style.opacity = 0;
+        })
+    </script>
 </body>
 </html>

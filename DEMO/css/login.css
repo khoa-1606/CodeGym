@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.om/css2?family=Poppins::wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+}
+.container {
+    position: relative;
+    width: 500px;
+    height: 530px;
+    background: transparent;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 45px;
+}
+.container .login-box {
+    position: relative;
+    width: 100%;
+}
+.login-box .page-box {
+    display: flex;
+    flex-direction: column;
+}
+.page-box .page {
+    width: 100%;
+}
+.page-box .page .email-page {
+    transform: translateX(0px);
+    transition: .25s ease-in-out;
+}
+.page-box .active-pass.page .email-page {
+    transform: translateX(-500px);
+}
+.page-box .page .password-page {
+    position: absolute;
+    transform: translateX(500px);
+    margin-top: 140px;
+    transition: .25s ease-in-out;
+}
