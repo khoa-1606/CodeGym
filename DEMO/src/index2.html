@@ -31,11 +31,15 @@
     <!-- Js
         <script src="bootstrap/js/bootstrap.js"></script>  -->
 
+        <!-- thu vien AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="../css/keyboard.css">
     <link rel="stylesheet" href="../css/mobile.css">
     <script src="../js/main.js"></script>
 </head>
-<body>
+<body class="aos-init"><!-- thu vien AOS -->
     <header>
         <!-- nav -->
         <div class="container-fluid p-0">
@@ -96,7 +100,7 @@
                     <a class="nav-link" href="#">LIÊN HỆ</a>
                 </li>
                     <div class="bt">
-                        <a href="index.html"><button class="button btn btn-primary" style="height: 40px; width: 100px; margin-left: 20px; margin-top: 15px;">Login</button></a>
+                        <a href="login.html"><button class="button btn btn-primary" style="height: 40px; width: 100px; margin-left: 20px; margin-top: 15px;">Login</button></a>
                         <a href="index.html"><button class="button btn btn-primary" style="height: 40px; width: 100px; margin-top: 15px; margin-left: 40px;">Register</button></a>
                     </div>
                 </li>
@@ -429,9 +433,9 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-4 mt-5">
+        <div class="container mt-5">
+            <div class="row mt-1">
+                <div class="col-4 mt-5" data-aos="fade-left">
                     <img src="../img/logo.png" style="width: 150px;">
                     <p class="text mt-3">Địa chỉ: ..., thành phố Trà Vinh, tỉnh Trà Vinh</p>
                     <p>Hotline: 1900 16698</p>
@@ -439,14 +443,14 @@
                     <a href="#"><i class="fab fa-linkedin-in" style="color: #009dff;"></i></a> &nbsp; &nbsp;
                     <a href="https://www.instagram.com/hi_imkhoa___/"  style="text-decoration: none; color: white;"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="col-3 mt-5">
+                <div class="col-3 mt-5" data-aos="fade-left">
                     <h6 class="title-name mb-4" style="font-weight: bold;">Sản phẩm nổi bật</h6>
                         <p><hr></p>
                         <p>Mainboard MSI MEG X399 Creation</p>
                         <p>Ram GSkill Trident Z5 RGB 64GB</p>
                         <p>CPU Intel Core i9-13900K</p>
                 </div>
-                <div class="col-4 mt-5 ml-5">
+                <div class="col-4 mt-5 ml-5" data-aos="fade-left">
                     <h6 class="title-name mb-4" style="font-weight: bold;">Chính sách</h6>
                         <p><hr></p>
                         <p>Chính sách bảo hành</p>
@@ -464,5 +468,9 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

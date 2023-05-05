@@ -30,12 +30,14 @@
             <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  -->
         <!-- Js
             <script src="bootstrap/js/bootstrap.js"></script>  -->
+        <!-- thu vien AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
         <link rel="stylesheet" href="../css/ctsp2.css">
-        <!-- <link rel="stylesheet" href="../css/mobile.css">
-        <script src="../js/main.js"></script> -->
+        <script src="test.js"></script>
 </head>
-<body>
+<body class="aos-init"><!-- thu vien AOS -->
     <header>
         <!-- nav -->
         <div class="container-fluid p-0">
@@ -191,44 +193,189 @@
         <!-- sp -->
         <div class="container-fluid">
             <div class="row">
-                <div class="namee mr-4 ml-4 mb-5">
+                <div class="namee mr-4 ml-4">
                     <h2 style="color: red; text-align: center; font-weight: bold;">KEYBOARD</h2>
                 </div>
             </div>
         </div>
 
-        <section class="container">
-            <div class="wrapper">
-                <img src="../img/keyboard/Logitech-ProX-Gaming.jpg" name="XPro" id="mainPhoto">
-                <div class="caption-wrapper">
-                    <div class="caption"></div>
-                    <div class="country">IMG1</div>
-                    <div class="btn">
-                        <a href="#">Add icon</a>
+        <div class="row">
+            <div class="col-8">
+                <div class="sph">
+                    <section class="container">
+                        <div class="wrapper">
+                        <img decoding="async" id="mainPhoto" name="PorX" src="images/Logitech-ProX-Gaming.jpg" />
+                    
+                        <div class="caption-wrapper">
+                            <div id="caption"></div>
+                            <div class="co">Logitech Pro Gaming</div>
+                            <div class="btn">
+                            <a href="#">Thêm vào giỏ</a>
+                            </div>
+                        </div>
+                    
+                        </div>
+                        <div class="image-wrapper">
+                        <img decoding="async" class="imgCarousel" name="PorX1" src="images/Logitech-ProX-Gaming.jpg" />
+                        <img decoding="async" class="imgCarousel" name="PorX2" src="images/Logitech-ProX-Gaming-2.jpg" />
+                        <img decoding="async" class="imgCarousel" name="PorX3" src="images/Logitech-ProX-Gaming-3.jpg" />
+                        <img decoding="async" class="imgCarousel" name="PorX4" src="images/Logitech-ProX-Gaming-4.jpg" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="title mt-5">
+                    <h2>Logitech Pro Gaming</h2>
+                    <p class="text-muted">Led GRB | 34mm x 361mm x 153mm | Bảo hành phần cứng trong 2 năm </p>
+                    <p class="text-muted">Thiết kế PRO đã được chứng minh trong thi đấu — nay với lựa chọn các phím switch cơ học GX cấp độ chuyên nghiệp có thể hoán đổi của bạn. Clicky, Tactile và Linear. 
+                        Được chế tạo để giành chiến thắng với sự hợp tác của các vận động viên thể thao điện tử hàng đầu thế giới.</p>
+                    <h5>Thông tin:</h5>
+                    <ul>
+                        <li>Các phím switch cơ học người dùng có thể tháo rời</li>
+                        <li>Dây 1,8 m có thể tháo rời được</li>
+                        <li>Tốc độ phản hồi 1 ms </li>
+                        <li>Các phím switch cơ học người dùng có thể tháo rời</li>
+                    </ul>
+                    <div class="d-flex justify-content-between m-2 info">
+                        <div class="mn">
+                        <div class="price2">
+                            <!-- <i class="fas fa-usd-circle" style="color: #6a707c;"></i>
+                            <p>. <sup>đ</sup></p> -->
+                        </div> 
+                        <div class="price">
+                            <!-- <i class="fas fa-usd-circle" style="color: #6a707c;"></i>  &nbsp; -->
+                            <p>3.499.000 <sup>đ</sup></p>
+                        </div>
+                        </div>
+
+                        <div class="buy">
+                            <a href="#"><i class="fas fa-shopping-cart" style="color: #fff;"></i>  Thêm vào giỏ</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="image-wrapper">
-                <img class="imgCarousel" src="../img/keyboard/Logitech-ProX-Gaming-1.jpg" name="XPro" class="imgCarousel">
-                <img class="imgCarousel" src="../img/keyboard/Logitech-ProX-Gaming-2.jpg" name="XPro" class="imgCarousel">
-                <img class="imgCarousel" src="../img/keyboard/Logitech-ProX-Gaming-3.jpg" name="XPro" class="imgCarousel">
-                <img class="imgCarousel" src="../img/keyboard/Logitech-ProX-Gaming-4.jpg" name="XPro" class="imgCarousel">
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="td">
+                    <h1 data-aos="fade-up">ĐƯỢC THIẾT KẾ CHO CÁC CHUYÊN GIA</h1>
+                    <hr>
+                    <p data-aos="fade-up">Các chuyên gia yêu cầu, chúng tôi lắng nghe. 
+                        Với thiết kế nhỏ gọn và các phím switch cấp độ chuyên nghiệp người dùng có thể hoán đổi, 
+                        PRO được kiểm nghiệm bởi các chuyên gia, đảm bảo trong thi đấu và được chế tạo để giành chiến thắng.</p>
+
+                    <div class="td0" data-aos="fade-up">
+                        <div class="td1" style="margin-left: 50px;">
+                            <h2>CÓ THỂ THAY ĐỔI</h2>
+                            <p>CÁC PHÍM SWITCH CẤP ĐỘ CHUYÊN NGHIỆP</p>
+                        </div>
+                        <div class="td2" style="margin-left: -100px;">
+                            <h2>RÚT GỌN</h2>
+                            <p>THIẾT KẾ NHỎ GỌN</p>
+                        </div>
+                        <div class="td3" style="margin-right: 100px;">
+                            <h2>LIGHTSYNC</h2>
+                            <p>RGB CÓ THỂ LẬP TRÌNH</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content" data-aos="flip-left">
+                    <img src="./images/Untitled.png">
+                </div>
 
+                <div class="nd1" data-aos="fade-right">
+                    <h1>CÁC PHÍM SWITCH CẤP ĐỘ CHUYÊN NGHIỆP NGƯỜI DÙNG CÓ THỂ THAY ĐỔI</h1>
+                    <hr>
+                    <p>Các phím switch cơ học GX nâng cao - được thiết kế và thử nghiệm 100% cho hiệu suất, phản hồi và độ bền. 
+                        Tùy chỉnh cảm giác về bàn phím PRO X của bạn với các phiên bản phím switch có thể tháo rời. </p>
+                    <p style="font-weight: bold;">GX Blue Clicky <br> GX Red Linear <br> GX Brown Tactile</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content">
+                    <img src="./images/Untitled2.png">
+                </div>
 
+                <div class="nd2" data-aos="fade-left">
+                    <h1>NHỎ GỌN + <br> SIÊU DI ĐỘNG</h1>
+                    <hr>
+                    <p>Thiết kế rút gọn không có bàn phím số tạo nhiều không gian cho con chuột của bạn chuyển động. 
+                        Thiết kế nhỏ gọn, bền bỉ cũng giúp nó dễ mang đi tới các cuộc thi đấu trên khắp thế giới.</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content">
+                    <img src="./images/Untitled3.png">
+                </div>
 
-        
+                <div class="nd1" data-aos="fade-right">
+                    <h1>LIGHTSYNC RGB </h1>
+                    <hr>
+                    <p style="width: 400px;">Nêu bật các phím quan trọng, hay chỉ thể hiện sự thống nhất với nhóm của bạn. 
+                        Tùy chỉnh ánh sáng và hình động bằng phần mềm Logitech HUB G. 
+                        Bàn phím PRO cho phép bạn lưu thiết kế ánh sáng tĩnh vào bộ nhớ trong để sử dụng trên các hệ thống thi đấu</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content">
+                    <img src="./images/Untitled4.png">
+                </div>
+
+                <div class="nd3" data-aos="fade-left">
+                    <hr>
+                    <p style="width: 400px;">Dây micro USB có thể tháo rời ra để vận chuyển an toàn trong túi du lịch, và có thiết kế ba chạc giúp kết nối an toàn, ổn định.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content" data-aos="flip-right">
+                    <img src="./images/Untitled5.png" style="height: 450px;">
+                </div>
+
+                <div class="nd4" data-aos="fade-right">
+                    <h1>3 GÓC ĐỘ + <br> CHÂN CAO SU </h1>
+                    <p class="text-muted" style="width: 400px;">Khi cuộc thi đấu trở nên căng thẳng, chân cao su giúp cố định bàn phím ở tại chỗ. Việc điều chỉnh ba bước giúp bạn đặt bàn phím ở vị trí có góc độ bạn thấy thoải mái nhất.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="content">
+                    <img src="./images/Untitled6.png" style="height: 450px;">
+                </div>
+
+                <div class="nd5" data-aos="fade-right">
+                    <h1 style="font-size: 30px;">12 MACRO <br> PHÍM F CÓ THỂ LẬP TRÌNH</h1>
+                    <p class="text-muted" style="width: 500px; margin-left: 100px;">Lập trình các hành động phức tạp, hẹn giờ hoặc ra lệnh cho các phím từ F1-F12 bằng Logitech HUB G</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="row mt-1">
-                <div class="col-4 mt-5">
+                <div class="col-4 mt-5" data-aos="fade-left">
                     <img src="../img/logo.png" style="width: 150px;">
                     <p class="text mt-3">Địa chỉ: ..., thành phố Trà Vinh, tỉnh Trà Vinh</p>
                     <p>Hotline: 1900 16698</p>
@@ -236,14 +383,14 @@
                     <a href="#"><i class="fab fa-linkedin-in" style="color: #009dff;"></i></a> &nbsp; &nbsp;
                     <a href="https://www.instagram.com/hi_imkhoa___/"  style="text-decoration: none; color: white;"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="col-3 mt-5">
+                <div class="col-3 mt-5" data-aos="fade-left">
                     <h6 class="title-name mb-4" style="font-weight: bold;">Sản phẩm nổi bật</h6>
                         <p><hr></p>
                         <p>Mainboard MSI MEG X399 Creation</p>
                         <p>Ram GSkill Trident Z5 RGB 64GB</p>
                         <p>CPU Intel Core i9-13900K</p>
                 </div>
-                <div class="col-4 mt-5 ml-5">
+                <div class="col-4 mt-5 ml-5" data-aos="fade-left">
                     <h6 class="title-name mb-4" style="font-weight: bold;">Chính sách</h6>
                         <p><hr></p>
                         <p>Chính sách bảo hành</p>
@@ -261,5 +408,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>

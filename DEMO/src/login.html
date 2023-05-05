@@ -28,46 +28,19 @@
         <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <form action="#">
-                <div class="page-box">
-                    <div class="login-title">
-                        <h1>Login</h1>
-                        <p>Please login to use the platform</p>
-                    </div>
-                    <div class="page email-page">
-                        <div class="input-box">
-                            <input type="text" class="email" autofocus required>
-                            <label>Enter you email</label>
-                        </div>
-                        <div class="forgot">
-                            <a href="#">Forgot email?</a>
-                        </div>
-                    </div>
-                    <div class="guest-mode"></div>
-                    <div class="btn-box"></div>
-                </div>
-                <div class="page email-page">
-                    <div class="input-box">
-                        <input type="text" class="email" autofocus required>
-                        <label>Enter you password</label>
-                    </div>
-                    <div class="forgot">
-                        <a href="#">Forgot password?</a>
-                    </div>
-                </div>
-                <div class="guest-mode">
-                    <p>Not your computer? Use guest mode to login privately.</p>
-                </div>
-                <div class="btn-box button-container">
-                    <a href="#"> Create account</a>
-                    <button class="btn-next">Next</button>
-                </div>
+    <section class="container-fluid">
+        <div class="login-form">
+            <h1>LOGIN</h1>
+            <!-- <h2>Vui lòng nhập tên tài khoản và mật khẩu</h2> -->
+            <form action="../src/index.html" class="form">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <input type="submit" value="login">
             </form>
         </div>
-    </div>
+    </section>
 
-    <script src="login.js"></script>
 </body>
 </html>
