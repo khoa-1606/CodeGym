@@ -91,7 +91,7 @@ body {
     letter-spacing: 2px;
     color: var(--grey);
     background-color: var(--white);
-    border: 2.5px solid red;
+    border: 2px solid red;
     border-radius: 20px;
     outline: none;
     transition: .3s ease;
@@ -116,7 +116,9 @@ body {
     width: 180px;
     letter-spacing: 2px;
 }
-
+.form input {
+    caret-color: red;
+}
 /* responsive */
 
 @media screen and (max-width: 900px) {

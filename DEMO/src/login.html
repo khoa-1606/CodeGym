@@ -7,7 +7,7 @@
     <title>K-D | Linh kiện máy tính</title>
 
         <!-- Tạo logo trên tên của tab trang web -->
-        <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/LOGOO.png" type="image/x-icon">
         <!-- setup webfont with cdn -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
@@ -25,14 +25,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         
+        <!-- thu vien AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
+<body class="aos-init"><!-- thu vien AOS -->
     <section class="container-fluid">
-        <div class="login-form">
+        <div data-aos="fade-up-right">
+            <img src="../img/LOGOO.png" style="width: 800px; height: 300px; margin-top: 200px;">
+        </div>
+        <div class="login-form" data-aos="flip-down">
             <h1>LOGIN</h1>
             <!-- <h2>Vui lòng nhập tên tài khoản và mật khẩu</h2> -->
-            <form action="../src/index.html" class="form">
+            <form action="../src/indexx.html" class="form">
                 <label for="username">Username:</label>
                 <input type="text" id="username">
                 <label for="password">Password:</label>
@@ -42,5 +49,8 @@
         </div>
     </section>
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

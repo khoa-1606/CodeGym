@@ -269,6 +269,9 @@ i.fa-times {
     border-radius: 5px;
     padding-top: 7px;
 }
+.section-2 li::marker {
+    content: '💥';
+}
 .section-2 .testimonial-row {
     width: 95%;
     margin: auto;
@@ -469,6 +472,9 @@ i.fa-times {
     width: 100%;
     border-radius: 5px;
     padding-top: 7px;
+}
+.section-3 li::marker {
+    content: '💥';
 }
 .section-3 .testimonial-row {
     width: 95%;
@@ -671,6 +677,9 @@ i.fa-times {
     border-radius: 5px;
     padding-top: 7px;
 }
+.section-4 li::marker {
+    content: '💥';
+}
 .section-4 .testimonial-row {
     width: 95%;
     margin: auto;
@@ -871,6 +880,9 @@ i.fa-times {
     width: 100%;
     border-radius: 5px;
     padding-top: 7px;
+}
+.section-5 li::marker {
+    content: '💥';
 }
 .section-5 .testimonial-row {
     width: 95%;
@@ -1073,6 +1085,9 @@ i.fa-times {
     border-radius: 5px;
     padding-top: 7px;
 }
+.section-6 li::marker {
+    content: '💥';
+}
 .section-6 .testimonial-row {
     width: 95%;
     margin: auto;
@@ -1265,6 +1280,14 @@ i.fa-times {
     animation: gg 700ms infinite; */
 }
 /* end section 6 */
+
+
+
+
+
+
+
+/* khuyen mai */
 .khuyen-mai-hb {
 	margin-bottom: 2px;
 	margin-top: 2px;
@@ -1389,3 +1412,23 @@ footer .container .col-4 hr {
     margin-top: -100px;
     color: white;
 }
+/* .img span {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+                0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.img:hover span {
+    bottom: 20px;
+} */

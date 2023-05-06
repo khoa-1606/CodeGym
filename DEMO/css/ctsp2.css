@@ -113,6 +113,7 @@ header .container .col-md-7 p {
 /* carousel */
 .carousel-item img {
     height: 550px;
+    border-radius: 0;
 }
 .carousel-indicators,
 .carousel-control-prev, 
@@ -220,11 +221,11 @@ i.fa-times {
     border: 3px solid red;
     margin: 10px;
 }
-img {
+/* img {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 .img-wrapper {
     margin-top: 10px;
 }
@@ -286,14 +287,24 @@ img {
 }
 .title {
     margin-right: 100px;
-    margin-left: -120px;
+    margin-left: -150px;
+    background: lightgray;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.title li::marker {
+    content: '✔️';
 }
 .title > h2 {
     text-align: center;
     color: red;
     margin-bottom: 20px;
 }
-
+.title > h5 {
+    font-weight: bold; 
+    color: orangered;
+}
 .info {
     height: 50px;
 }
@@ -324,7 +335,7 @@ img {
 .info .price p {
     font-weight: bold;
     float: right;
-    font-size: 25px;
+    font-size: 27px;
     margin-left: 20px;
 }
 .info .price2 {
@@ -351,7 +362,7 @@ img {
     border: none;
     border-top: 5px solid #ccc;
     height: 1px;
-    margin-left: 630px;
+    margin:auto;
     width: 20%;
     text-align: center;
 }
@@ -460,6 +471,101 @@ hr {
 .nd5 > h1 {
     font-weight: bold;
 }
+.dx {
+    background: #484848;
+    height: 600px;
+}
+.dx > h2 {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.dx > hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    height: 1px;
+    margin: 25px 0;
+    width: 50%;
+    margin: auto;
+}
+.dx .carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.dx .carousel-slide {
+    display: inline-block;
+    width: 20%;
+    margin: 0 1%;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+}
+    
+.dx .carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.dx .carousel-slide h3 {
+    margin: 10px 0;
+}
+.dx .carousel-slide p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+.dx .carousel-slide.active {
+    margin-left: 0;
+}
+.dx .carousel-slide.prev {
+    margin-left: -32%;
+}
+.dx .carousel-slide.next {
+    margin-left: 32%;
+}
+.dx .carousel-slide:hover {
+    transform: scale(0.9);
+}
+.dx .carousel-slide h3 {
+    font-size: 22px;
+}
+.dx .carousel-slide h3:hover {
+    color: red;;
+}
+.dx .carousel-slide p {
+    float: right;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -4px;
+}
+.dx .carousel-slide > .ct{
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px ;
+    top: 15%;
+    opacity: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all 0.8s ;
+    background: red;
+    margin-top: 80px;
+    margin-left: 70px;
+    z-index: 1;
+    height: 40px;
+    width: 120px;
+}
+.carousel-slide:hover > .ct{
+    opacity: 1; /*thiết lập độ đậm nhạt cho .ct khi hover vào .hinhanh*/
+}
+
+
+
+
 
 
 

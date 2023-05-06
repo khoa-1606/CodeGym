@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(#333, #fff);
+            box-shadow: inset 0 0 100px hsla(0, 0%, 0%, 0.3);
+            font-family: "Poppins", sans-serif;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            /* background: url(../img/keyboard/banner-1.jpg); */
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            opacity: 0.3;
+            background-position: center center;
+            z-index: -1;
+        }
+        body::after {
+            content: "";
+            position: absolute;
+            /* background: url(../img/keyboard/bannerr.jpg); */
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center center;
+            z-index: -1;
+            opacity: 1;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+            width: 800px;
+            height: 400px;
+        }
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /* flex: 1; */
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.7) saturate(0.2) contrast(1) blur(2px);
+            border-radius: 20px;
+            transition: flex 0.3s, filter 0.3s;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            border: 1px solid red;    
+        }
+        /* .img:hover {
+            flex: 1.5;
+            filter: none;
+        } */
+        .img span {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            letter-spacing: 1px;
+            font-weight: bold;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.5s;
+            text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+                        0px -4px 10px rgba(255, 255, 255, 0.3);
+        }
+        .img:hover span {
+            bottom: 20px;
+        }
+        .img1 {
+            background-image: url(../img/QC/Intel-trinh-lang-Core-i9-13900KS.jpg);
+        }
+        .img2 {
+            background-image: url(../img/QC/keyboard-collage.jpg);
+        }
+        .img3 {
+            background-image: url(../img/QC/mua-ssd-nao.jpg);
+        }
+        .img4 {
+            background-image: url(../img/QC/ram-la-gi-1.jpg);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="img img1">
+            <span>Intel trình làng Core i9</span>
+        </div>
+
+        <div class="img img2">
+            <span>Các layout cơ bản của bàn phím</span>
+        </div>
+
+        <div class="img img3">
+            <span>Phân biệt SSD với HDD</span>
+        </div>
+
+        <div class="img img4">
+            <span>Tổng hợp RAM tốt nhất 2023</span>
+        </div>
+    </section>
+</body>
+</html>
