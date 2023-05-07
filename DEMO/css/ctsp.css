@@ -74,6 +74,7 @@ header .container .col-md-7 p {
 .nav-link:hover {
     color: red;
 }
+/* btn */
 .button {
     text-decoration: none;
     font-size: 16px;
@@ -81,6 +82,10 @@ header .container .col-md-7 p {
     border: 3px solid red;
     position: relative;
     background-color: #333;
+}
+.button:hover {
+    background-color: red;
+    border: 3px solid red;;
 }
 .button::before,
 .button::after {
@@ -217,16 +222,36 @@ i.fa-times {
     border-radius: 5px;
     padding-top: 8px;
 }
+/* zoom */
+.hinh1 {
+    margin-left: -50px;
+    padding-left: -20px;
+    width: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.hinh1 img {
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+    cursor: pointer;
+}
+.hinh1:hover img {
+    transform: scale(1.4);
+}
+/* end zoom */
 .name {
     width: 100%;
     height: 500px;
 }
 .name1 {
-    height: 150px;
-    background-image: 
+    height: 160px;
+    /* background-image: 
         linear-gradient(
             to top, #e5dbe1, #222222
-        );
+        ); */
+        background: rgb(51,51,51);
+        background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(255,0,0,1) 84%, rgba(255,255,255,1) 100%);
     margin: 0;
     display: grid;
     justify-content: center;
@@ -234,7 +259,9 @@ i.fa-times {
     border-radius: 10px;
 }
 .name1 h2 {
-    color: red;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
     text-align: center;
 }
 .name1 p {
@@ -279,7 +306,7 @@ i.fa-times {
 .name .info .price p {
     font-weight: bold;
     float: right;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 20px;
 }
 .name .info .price2 {
@@ -301,7 +328,15 @@ i.fa-times {
     font-size: 14px;
     font-family: var(--Rubik)
 }
-h4, h5 {
+
+h1 {
+    text-align: center;
+    color: red;
+}
+.tt {
+    margin-left: 100px;
+}
+h3, h4 {
     color: blue;
     font-weight: bold
 }
@@ -316,7 +351,8 @@ h4, h5 {
 }
 .card .price {
     color: red;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .card .btn {
     float: right;
@@ -347,4 +383,10 @@ footer .container .col-4 hr {
     background: white;
     border: 0;
     height: 1px;
+}
+.container .col-4 i {
+    font-size: 20px;
+}
+.container .col-4 i:hover {
+    transform: scale(1.2);
 }

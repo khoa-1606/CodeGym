@@ -75,7 +75,9 @@ header .container .col-md-7 p {
 }
 .nav-link:hover {
     color: red;
+    text-decoration: underline; /* gach chan */
 }
+/* btn */
 .button {
     text-decoration: none;
     font-size: 16px;
@@ -83,6 +85,10 @@ header .container .col-md-7 p {
     border: 3px solid red;
     position: relative;
     background-color: #333;
+}
+.button:hover {
+    background-color: red;
+    border: 3px solid red;;
 }
 .button::before,
 .button::after {
@@ -565,16 +571,6 @@ hr {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* footer */
 footer {
     background: #333;
@@ -586,12 +582,14 @@ footer .container .col-3 hr {
     background: white;
     border: 0;
     height: 1px;
+    width: 60%;
 }
 footer .container .col-4 hr {
     color: white;
     background: white;
     border: 0;
     height: 1px;
+    width: 70%;
 }
 footer .col-12 > hr {
     border: none;

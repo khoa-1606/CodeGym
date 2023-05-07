@@ -40,6 +40,7 @@ header a {
 .nav-link:hover {
     color: red;
 }
+/* btn */
 .button {
     text-decoration: none;
     font-size: 16px;
@@ -47,6 +48,10 @@ header a {
     border: 3px solid red;
     position: relative;
     background-color: #333;
+}
+.button:hover {
+    background-color: red;
+    border: 3px solid red;;
 }
 .button::before,
 .button::after {
@@ -671,4 +676,10 @@ footer .container .col-4 hr {
     background: white;
     border: 0;
     height: 1px;
+}
+.container .col-4 i {
+    font-size: 20px;
+}
+.container .col-4 i:hover {
+    transform: scale(1.2);
 }
