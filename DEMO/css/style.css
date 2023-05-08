@@ -1266,7 +1266,7 @@ i.fa-times {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 35px;
-    border-radius: 26% 74% 20% 80% / 80% 19% 81% 20% ;
+    border-radius: 20px;
     -webkit-animation-name: example; 
     -webkit-animation-duration: 4s;  
     animation-name: example;  
