@@ -252,7 +252,47 @@ i.fa-times {
 .dd a:hover {
     color: orange;
 } 
-
+/* ------------------------------- */
+/* search-container
+.search-container {
+    position: relative;
+    margin: 20px;
+} */
+  
+/* search-field 
+.search-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+} */
+  
+/* search-label
+.search-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+} */
+  
+/* search-highlight
+.search-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+} */
+  
 /* -----------------sp----------------- */
 .namee {
     background-color: #333;

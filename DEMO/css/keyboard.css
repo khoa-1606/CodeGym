@@ -231,11 +231,11 @@ header a {
 /* Large devices (desktops, 900px and up) - 850*/
 @media (min-width:600px) and (max-width: 900px) {
     .navbar {
-        height: 6vmin;
+        height: 7vmin;
     }
-    .narbar-brand {
+    /* .narbar-brand {
         margin-left: 5px;
-    }
+    } */
     .navbar-toggler {
         margin-top: -1vmin;
     }
