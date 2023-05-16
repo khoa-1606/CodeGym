@@ -1,0 +1,68 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/* tao font chu */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+    - Lam tu ngoai vao trong
+    - Lam tu tren xuong duoi
+    - Tong quan den chi tiet
+*/
+
+/* 
+    1. Vi tri
+    2. Kich thuoc (width, height)
+    3. Mau sac
+    4. Kieu dang (kieu chu, hinh dang - tron - vuong - tam giac - ...
+*/
+
+#main {
+
+}
+/* ----------------------------------------------------------- */
+#header {
+    height: 46px;
+    background-color: black;
+}
+/* ----------------------------------------------------------- */
+#nav {
+
+}
+
+#nav li {
+    display: inline-block;
+
+}
+#nav li a {
+    color: white;
+    text-decoration: none; /*bo gach chan the a*/
+    line-height: 46px;
+    padding: 0 24px; /*tren+duoi=0 ; trai+phai=24px*/
+    display: inline-block; /* kich thuuoc the a an theo li*/
+}
+#nav li:hover a {
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav {
+    display: none; /*an phan subnav*/
+}/* ----------------------------------------------------------- */
+
+#slider {
+
+}
+/* ----------------------------------------------------------- */
+#content {
+
+}
+/* ----------------------------------------------------------- */
+#footer {
+
+}
+

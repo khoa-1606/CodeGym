@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo W3School</title>
-</head>
-<body>
+    <title>Demo W3School - Band</title>
+
+    <!-- Tạo logo trên tên của tab trang web -->
+    <link rel="shortcut icon" href="./assets/img/LOGOO.png" type="image/x-icon">
+
+    <!-- Thư viện AOS - tạo hiệu ứng khi cuộn trang -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- link css -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="aos-init"><!-- Thư viện AOS - tạo hiệu ứng khi cuộn trang -->
+    <div id="main">
+        <div id="header">
+            <!-- ul#nav>li*5>a => tao nhanh-->
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="#">More</a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="slider">
+
+        </div>
+
+
+        <div id="content">
+
+        </div>
+
+
+        <div id="footer">
+
+        </div>
+    </div>
+
+
 </body>
+
+<!-- Thư viện AOS - tạo hiệu ứng khi cuộn trang -->
+    <script>
+        AOS.init();
+    </script>
 </html>
