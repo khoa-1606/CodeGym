@@ -31,31 +31,40 @@ html{
     background-color: black;
 }
 /* ----------------------------------------------------------- */
-#nav {
-
+#nav, .subnav {
+    list-style-type: none;
 }
-
-#nav li {
+#nav > li {
     display: inline-block;
-
+}
+#nav li {
+    position: relative;
+}
+#nav > li > a {
+    color: #fff;
 }
 #nav li a {
-    color: white;
     text-decoration: none; /*bo gach chan the a*/
     line-height: 46px;
     padding: 0 24px; /*tren+duoi=0 ; trai+phai=24px*/
-    display: inline-block; /* kich thuuoc the a an theo li*/
+    display: block; /* kich thuuoc the a an theo li*/
 }
-#nav li:hover a {
+#nav > li:hover > a ,
+#nav .subnav li:hover a {
     color: black;
     background-color: #ccc;
 }
 #nav .subnav {
-    display: none; /*an phan subnav*/
+    /*display: none; an phan subnav*/
+    position: absolute;
+    background-color: #fff;
 }/* ----------------------------------------------------------- */
-
+#nav .subnav a {
+    color: black;
+}
 #slider {
-
+    min-height: 500px;
+    background-color: #333;
 }
 /* ----------------------------------------------------------- */
 #content {
